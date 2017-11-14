@@ -19,7 +19,7 @@ int main(){
     callme1(headline1);
     cout << "headline1: " << headline1 << endl;
     callme2(headline2);
-    cout << "headline1: " << headline1 << endl;
+    cout << "headline1: " << headline2 << endl;
     cout <<"Initialize one object to another: \n";
     StringBad sailor = sports;
     cout << "sailor: " << sailor << endl;
