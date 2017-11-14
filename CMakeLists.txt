@@ -6,5 +6,5 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES main.cpp)
 #add_executable(main1 ${SOURCE_FILES})
 
-set(SOURCE_FILES vect.cpp vect.h randwalk.cpp)
+set(SOURCE_FILES stonewt.h stonewt.cpp stone.cpp)
 add_executable(1 ${SOURCE_FILES})
