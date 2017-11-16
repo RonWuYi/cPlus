@@ -61,7 +61,7 @@ char & String::operator[](int i) {
     return str[i];
 }
 
-char & String::operator[](int i) const {
+const char & String::operator[](int i) const {
     return str[i];
 }
 

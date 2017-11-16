@@ -48,6 +48,5 @@ int main()
     cout << "Program used " << String::HowMany()
                             << " String objects. Bye. \n";
     cin.get();
-    cin.get();
     return 0;
 }
