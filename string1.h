@@ -19,7 +19,7 @@ public:
     String();
     String(const String &);
     ~String();
-    int length()const { return len;}
+    int length()const {return len;}
     // overloaded operator
     String &operator= (const String &);
     String &operator= (const char *);

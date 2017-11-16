@@ -19,7 +19,7 @@ int main()
     String saying[ArSize];
     char temp[MaxLen];
     int i;
-    for (int i = 0; i < ArSize; ++i) {
+    for (i = 0; i < ArSize; i++) {
         cout << i+1 << ": ";
         cin.get(temp, MaxLen);
         while (cin && cin.get() != '\n')
@@ -29,14 +29,15 @@ int main()
         else
             saying[i] = temp;
     }
+
     int total = i;
     cout << "what yousayings:\n";
-    for (int i = 0; i < total; ++i) {
+    for (int i = 0; i < total; i++) {
         cout << saying[i][0] <<" : " <<saying[i] << endl;
     }
     int shortest = 0;
     int first = 0;
-    for (int i = 1; i < total; ++i) {
+    for (int i = 1; i < total; i++) {
         if(saying[i].length() < saying[shortest].length())
             shortest = i;
         if(saying[i] < saying[first])
