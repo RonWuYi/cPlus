@@ -30,6 +30,7 @@ int main(){
     cout << "end of main()\n";
 
     std::cin.get();
+    std::cin.get();
     return 0;
 }
 
