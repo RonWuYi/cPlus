@@ -15,7 +15,7 @@ private:
     static int num_strings;
     static const int CINLIM= 80;
 public:
-    String(const char * s);
+    explicit String(const char * s);
     String();
     String(const String &);
     ~String();

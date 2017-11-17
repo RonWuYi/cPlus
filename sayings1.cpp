@@ -31,7 +31,7 @@ int main()
     }
 
     int total = i;
-    cout << "what yousayings:\n";
+    cout << "what are you sayings:\n";
     for (int i = 0; i < total; i++) {
         cout << saying[i][0] <<" : " <<saying[i] << endl;
     }
