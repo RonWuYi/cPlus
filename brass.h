@@ -27,7 +27,7 @@ private:
     double owesBank;
 public:
     BrassPlus(const char *s = "NONE", long an = -1, double bal = 0.0, double ml = 500, double r = 0.10);
-    BrassPlus(const Brass &ba, double m1 = 500, double r= 0.1);
+    BrassPlus(const Brass &ba, double ml = 500, double r= 0.1);
     virtual void ViewAcct()const ;
     virtual void Withdraw(double amt);
     void ResetMax(double m){maxLoan = m;}

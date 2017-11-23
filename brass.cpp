@@ -60,3 +60,16 @@ BrassPlus::BrassPlus(const Brass &ba, double m1, double r) :Brass(ba){
     owesBank = 0.0;
     rate = r;
 }
+
+void BrassPlus::ViewAcct() const {
+    ios_base::fmtflags initialState =
+            cout.setf(ios_base::fixed, ios_base::floatfield);
+    cout.setf(ios_base::showpoint);
+    cout.precision(2);
+
+    Brass::ViewAcct();
+    cout << "Maximum loan: $" << maxLoan << endl;
+    cout << "Owed to bank: $" << owesBank << endl;
+    cout << "Loan Rate: " << 100*rate << "%\n";
+    cout.setf(initialState);
+}
