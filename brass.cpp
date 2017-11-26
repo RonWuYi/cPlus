@@ -73,3 +73,24 @@ void BrassPlus::ViewAcct() const {
     cout << "Loan Rate: " << 100*rate << "%\n";
     cout.setf(initialState);
 }
+
+void BrassPlus::Withdraw(double amt) {
+    ios_base::fmtflags initialState =
+            cout.setf(ios_base::fixed, ios_base::floatfield);
+    cout.setf(ios_base::showpoint);
+    cout.precision(2);
+
+    double bal = Balance();
+    if(amt <= bal)
+        Brass::Withdraw(amt);
+    else if(amt <=bal + maxLoan - owesBank){
+        double advance = amt - bal;
+        owesBank += advance *(1.0+rate);
+        cout << "Bank advance: $" << advance << endl;
+        cout << "Finance charge: $" << advance*rate << endl;
+        Deposit(advance);
+        Brass::Withdraw(amt);
+    } else
+        cout<<"Credit limit exceeded. Transaction cancelled.\n";
+    cout.setf(initialState);
+}
