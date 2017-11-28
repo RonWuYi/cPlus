@@ -30,5 +30,11 @@ public:
     const std::string &Name()const ;
     double &operator[](int i);
     double operator[](int i)const ;
+    friend std::istream &operator>>(std::istream &is,
+        Student &stu);
+    friend std::istream &getline(std::istream &is,
+        Student &stu);
+    friend std::ostream &operator<<(std::ostream &os,
+        const Student &stu);
 };
 #endif //CPLUS_STUDENTC_H
