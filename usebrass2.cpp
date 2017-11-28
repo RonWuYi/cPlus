@@ -2,7 +2,7 @@
 // Created by Ron on 11/24/2017.
 //
 #include <iostream>
-#include "brass.h"
+#include "acctabc.h"
 //const int CLIENTS = 4;
 const int CLIENTS = 2;
 const int LEN = 40;
@@ -10,7 +10,7 @@ const int LEN = 40;
 int main()
 {
     using namespace std;
-    Brass * p_clients[CLIENTS];
+    AcctABC * p_clients[CLIENTS];
 
     int i;
     for (i = 0; i < CLIENTS; i++) {
