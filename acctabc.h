@@ -27,7 +27,7 @@ public:
     virtual void Withdraw(double amt) = 0; // pure virtual function
     double Balance()const { return balance;};
     virtual void ViewAcct()const = 0;
-    virtual ~AcctABC(){}
+//    virtual ~AcctABC();
 };
 
 class Brass: public AcctABC
@@ -37,7 +37,7 @@ public:
           double bal = 0.0): AcctABC(s, an , bal){}
     virtual void Withdraw(double amt);
     virtual void ViewAcct()const;
-    virtual ~AcctABC(){};
+//    virtual ~AcctABC();
 };
 
 class BrassPlus: public AcctABC
