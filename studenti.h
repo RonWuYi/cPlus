@@ -1,0 +1,45 @@
+//
+// Created by ron on 10-12-17.
+//
+
+#ifndef CPLUS_STUDENTI_H
+#define CPLUS_STUDENTI_H
+
+#include <iostream>
+#include <valarray>
+#include <string>
+class Student : private std::string, private std::valarray<double >
+{
+private:
+    typedef std::valarray<double> ArrayDb;
+    // private method for scores output
+    std::ostream & arr_out(std::ostream &os) const ;
+
+public:
+    Student() :std::string("Null Student"), ArrayDb(){}
+    Student(const std::string &s) :std::string(s), ArrayDb(){}
+    Student(int n) :std::string("Nully"), ArrayDb(n){}
+    Student(const std::string &s, int n)
+            :std::string(s), ArrayDb(n){}
+    Student(const std::string &s, const ArrayDb &a)
+            :std::string(s), ArrayDb(a){}
+    Student(const char *str, const double *pd, int n)
+            :std::string(str), ArrayDb(pd, n){}
+    ~Student(){}
+    double Average() const;
+    double &operator[](int i);
+    double operator[](int i) const ;
+    const std::string &Name()const ;
+    // friends
+    // input
+
+    friend std::istream &operator>>
+            (std::istream &is, Student &stu); // 1 word
+    friend std::istream &getline
+            (std::istream &is, Student &stu); // 1 line
+
+    friend std::ostream &operator<<
+            (std::ostream &os, const Student &stu);
+
+};
+#endif //CPLUS_STUDENTI_H
