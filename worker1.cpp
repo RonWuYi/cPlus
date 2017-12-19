@@ -1,13 +1,24 @@
 //
 // Created by ron on 11-12-17.
 //
-#include "Work0.h"
+#include "work1.h"
 #include <iostream>
 
 using namespace std;
 
 Worker::~Worker() {}
 
+Worker::Data()const
+{
+    cout << "Name: " << fullname << endl;
+    cout << "ID: " << id << endl;
+}
+
+void Worker::Get()
+{
+    getline(cin, fullname);
+    cout << "Enter worker's ID: "
+}
 void Worker::Set()
 {
     cout << "Enter worker's name: ";
