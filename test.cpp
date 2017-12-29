@@ -1,53 +1,20 @@
-//
-// Created by HFD on 11/14/2017.
-//
-
 #include <iostream>
-#include <cmath>
-#include <ctime>
-#include <cstdlib>
+#include <string>
+#include <vector>
 
+const int NUM = 5;
 using namespace std;
-enum Days{Sat, Sun = 0, Mon, Tue, Wed, Thur, Fri};
 
-void Prnt(Days day)
+int main()
 {
-    if (day == 0)
-    {
-        cout<<"happy" <<endl;
-    }
-    else
-        cout<<"work"<<endl;
-}
-int main(){
-    enum Fruit{apple, pear, orange, banana}frt1;
-    typedef enum Fruit ShuiGuo;
-    enum Fruit frt2 = apple;
-    ShuiGuo frt3 = pear;
-    frt1 = (Fruit)0;
-    for (int i = apple; i <=banana ; i++)
-        switch (i)
-    {
-        case apple:cout<<"apple" <<endl;
-            break;
-        case pear:cout<<"pear" <<endl;
-            break;
-        case orange:cout<<"orange" <<endl;
-            break;
-        case banana:cout<<"banana" <<endl;
-            break;
-//
-//        case apple:cout<<"apple" <<endl;
-//            break;
-    }
+    vector<int> ratings(NUM);
+    vector<string> titles(NUM);
+    cout << "You will do exactly as told. You will enter\n"
+         <<NUM<< " book titles and your ratings(0-10).\n";
 
-    Prnt(Sat);
-    Prnt(Sun);
-    Prnt(Mon);
-    Prnt(Tue);
-    Prnt(Thur);
-    Prnt(Fri);
-    Prnt(Wed);
-    cin.get();
+    int i;
+    for (i = 0; i < NUM; i++) {
+
+    }
     return 0;
 }
