@@ -2,19 +2,85 @@
 #include <string>
 #include <vector>
 
-const int NUM = 5;
 using namespace std;
+
+struct Review{
+    string title;
+    int rating;
+};
+
+bool FillReview(Review &rr);
+void ShowReview(const Review &rr);
+//const int NUM = 5;
 
 int main()
 {
-    vector<int> ratings(NUM);
-    vector<string> titles(NUM);
-    cout << "You will do exactly as told. You will enter\n"
-         <<NUM<< " book titles and your ratings(0-10).\n";
+    vector<Review> books;
+    Review temp;
+    while (FillReview(temp))
+        books.push_back(temp);
 
-    int i;
-    for (i = 0; i < NUM; i++) {
-
+    int num = books.size();
+    if (num > 0)
+    {
+        cout << "Thank you. You entered the following:\n"
+             << "Rating\tBook\n";
+        for (int i = 0; i < num; i++)
+        {
+            ShowReview(books[i]);
+        }
+        cout << "Reprising:\n"
+             <<"Rating\tBook\n";
+        vector<Review>::iterator pr;
+        for (pr = books.begin(); pr != books.end(); pr++)
+        {
+            ShowReview(*pr);
+        }
+        vector<Review> oldlist(books);
+        if(num > 3)
+        {
+            books.erase(books.begin()+1, books.begin()+3);
+            cout << "After erasure:\n";
+        }
+        for (pr = books.begin(); pr != books.end(); pr++)
+        {
+            ShowReview(*pr);
+        }
+        books.insert(books.begin(), oldlist.begin()+1, oldlist.begin()+2);
+        cout << "After insertion:\n";
+        for (pr = books.begin(); pr != books.end(); pr++)
+        {
+            ShowReview(*pr);
+        }
+    books.swap(oldlist);
+    cout << "Swapping oldlist with books:\n";
+    for (pr = books.begin(); pr != books.end(); pr++)
+    {
+        ShowReview(*pr);
     }
+    } else
+    {
+        cout << "Nothing entered, nothing gained.\n";
+    }
+//    if (num > 0)
     return 0;
+}
+
+bool FillReview(Review &rr)
+{
+    cout << "enter title: ";
+    getline(cin, rr.title);
+    if(rr.title == "quit")
+        return false;
+    cout << "enter book rating: ";
+    cin >> rr.rating;
+    if (!cin)
+        return false;
+    cin.get();
+    return true;
+}
+
+void ShowReview(const Review &rr)
+{
+    cout << rr.rating << "\t " << rr.title << endl;
 }
