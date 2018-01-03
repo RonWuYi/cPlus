@@ -1,86 +1,67 @@
 #include <iostream>
+#include <fstream>
 #include <string>
-#include <vector>
+#include <cstdlib>
+#include <iomanip>
 
-using namespace std;
-
-struct Review{
-    string title;
-    int rating;
+inline void eatline(){while (std::cin.get()!='\n') continue;}
+struct planet
+{
+    char name[20];
+    double population;
+    double g;
 };
-
-bool FillReview(Review &rr);
-void ShowReview(const Review &rr);
-//const int NUM = 5;
+const char *file = "planets.dat";
 
 int main()
 {
-    vector<Review> books;
-    Review temp;
-    while (FillReview(temp))
-        books.push_back(temp);
-
-    int num = books.size();
-    if (num > 0)
+    using namespace std;
+    planet pl;
+    cout << fixed <<right;
+    ifstream fin;
+    fin.open(file, ios_base::in | ios_base::binary);
+    if (fin.is_open())
     {
-        cout << "Thank you. You entered the following:\n"
-             << "Rating\tBook\n";
-        for (int i = 0; i < num; i++)
+        cout << "here are the current contents of the "
+             << file << " file:\n";
+        while (fin.read((char *) &pl, sizeof pl))
         {
-            ShowReview(books[i]);
+            cout << setw(20) << pl.name << ": "
+                 <<setprecision(0) << setw(12) <<pl.population
+                    <<setprecision(2) << setw(6) <<pl.g << endl;
         }
-        cout << "Reprising:\n"
-             <<"Rating\tBook\n";
-        vector<Review>::iterator pr;
-        for (pr = books.begin(); pr != books.end(); pr++)
-        {
-            ShowReview(*pr);
-        }
-        vector<Review> oldlist(books);
-        if(num > 3)
-        {
-            books.erase(books.begin()+1, books.begin()+3);
-            cout << "After erasure:\n";
-        }
-        for (pr = books.begin(); pr != books.end(); pr++)
-        {
-            ShowReview(*pr);
-        }
-        books.insert(books.begin(), oldlist.begin()+1, oldlist.begin()+2);
-        cout << "After insertion:\n";
-        for (pr = books.begin(); pr != books.end(); pr++)
-        {
-            ShowReview(*pr);
-        }
-    books.swap(oldlist);
-    cout << "Swapping oldlist with books:\n";
-    for (pr = books.begin(); pr != books.end(); pr++)
-    {
-        ShowReview(*pr);
+        fin.close();
     }
-    } else
-    {
-        cout << "Nothing entered, nothing gained.\n";
-    }
-//    if (num > 0)
-    return 0;
-}
 
-bool FillReview(Review &rr)
-{
-    cout << "enter title: ";
-    getline(cin, rr.title);
-    if(rr.title == "quit")
-        return false;
-    cout << "enter book rating: ";
-    cin >> rr.rating;
-    if (!cin)
-        return false;
+    ofstream fout(file, ios_base::out |ios_base::app | ios_base::binary);
+    if(!fout.is_open())
+    {
+        cerr << "Can't opne" << file << " file for output: \n";
+        exit(EXIT_FAILURE);
+    }
+
+    cout << "Enter planet name(enter a blank line to quit):\n";
+    cin.get(pl.name, 20);
+    while (pl.name[0] != '\0')
+    {
+        eatline();
+        cout << "Enter planetary population: ";
+        cin >> pl.population;
+        cout << "Enter planet's acceleration of gravity: ";
+        cin >> pl.g;
+        eatline();
+        fout.write((char *) &pl, sizeof pl);
+        cout << "Enter planet name(enter a blank line "
+             "to quit):\n";
+        cin.get(pl.name, 20);
+    }
+    fout.close();
+
+    // show file
+    fin.clear();
+    fin.open(file, ios_base::in | ios_base::binary);
+
     cin.get();
-    return true;
-}
-
-void ShowReview(const Review &rr)
-{
-    cout << rr.rating << "\t " << rr.title << endl;
+    cin.get();
+    return 0;
 }
