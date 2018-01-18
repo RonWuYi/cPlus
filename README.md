@@ -1,5 +1,5 @@
 # cPlus
- 712 PAGE  C++ Primer Plus version 5
+161 PAGE  C++ Primer Plus version 5
 
 
 

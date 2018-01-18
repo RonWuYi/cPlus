@@ -5,6 +5,7 @@
 #include <iomanip>
 
 inline void eatline(){while (std::cin.get()!='\n') continue;}
+
 struct planet
 {
     char name[20];
