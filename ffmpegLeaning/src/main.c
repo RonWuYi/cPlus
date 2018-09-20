@@ -8,9 +8,9 @@ void SaveFrame(AVFrame *pFrame, int width, int height, int iFrame);
 int main(int argc, char *argv[]){
 //    av_register_all();
     AVFormatContext *pFormatCtx = NULL;
-
+    char filepath[]="C:\\Users\\Public\\Videos\\Sample Videos\\Wildlife.wmv";
     // Open video file
-    if (avformat_open_input(&pFormatCtx, argv[1], NULL, NULL)!=0){
+    if (avformat_open_input(&pFormatCtx, filepath, NULL, NULL)!=0){
         return -1;
     }
 
@@ -100,7 +100,8 @@ int main(int argc, char *argv[]){
                             );
     i=0;
     int ret;
-//    int *got_frame;
+    //int *got_frame;
+    // ToDo bug here
     while (av_read_frame(pFormatCtx, packet)>0){
 
         // Is this a packet from the video stream?
