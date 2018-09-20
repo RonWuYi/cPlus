@@ -1,0 +1,8 @@
+// the configured options and settings for Tutorial
+#define cPlus_VERSION_MAJOR @cPlus_VERSION_MAJOR@
+#define cPlus_VERSION_MINOR @cPlus_VERSION_MINOR@
+#cmakedefine USE_MYMATH
+
+
+#cmakedefine HAVE_LOG
+#cmakedefine HAVE_EXP
