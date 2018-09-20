@@ -79,9 +79,9 @@ int main(){
     cout<<"Done!\n";
     cin.get();
     cin.get();
-    cin.get();
-    cin.get();
-    cin.get();
+//    cin.get();
+//    cin.get();
+//    cin.get();
     return 0;
 }
 

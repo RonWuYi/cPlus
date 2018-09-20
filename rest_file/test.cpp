@@ -1,29 +1,68 @@
-//
-// Created by HFD on 11/14/2017.
-//
-
 #include <iostream>
-#include <cmath>
-#include <ctime>
+#include <fstream>
+#include <string>
 #include <cstdlib>
+#include <iomanip>
 
-using namespace std;
-bool newcustomer(double x){
-    return (std::rand()*x/RAND_MAX < 1);
-}
-int main(){
-    int total = 0;
-    for (double i = 1.0; i < 61.0; i++) {
-        cout << newcustomer(i) << "  during i = "<< i <<" rand()= " <<rand()<<endl;
+inline void eatline(){while (std::cin.get()!='\n') continue;}
 
-        if(newcustomer(i)==1)
-            total++;
+struct planet
+{
+    char name[20];
+    double population;
+    double g;
+};
+const char *file = "planets.dat";
+
+int main()
+{
+    using namespace std;
+    planet pl;
+    cout << fixed <<right;
+    ifstream fin;
+    fin.open(file, ios_base::in | ios_base::binary);
+    if (fin.is_open())
+    {
+        cout << "here are the current contents of the "
+             << file << " file:\n";
+        while (fin.read((char *) &pl, sizeof pl))
+        {
+            cout << setw(20) << pl.name << ": "
+                 <<setprecision(0) << setw(12) <<pl.population
+                    <<setprecision(2) << setw(6) <<pl.g << endl;
+        }
+        fin.close();
     }
 
-    cout << "total = "<<total << endl;
+    ofstream fout(file, ios_base::out |ios_base::app | ios_base::binary);
+    if(!fout.is_open())
+    {
+        cerr << "Can't opne" << file << " file for output: \n";
+        exit(EXIT_FAILURE);
+    }
 
-    cout << "RAND_MAX = "<<RAND_MAX << endl;
-    cout << "srand(std::time(0)) = "<< srand(std::time(0)) << endl;
+    cout << "Enter planet name(enter a blank line to quit):\n";
+    cin.get(pl.name, 20);
+    while (pl.name[0] != '\0')
+    {
+        eatline();
+        cout << "Enter planetary population: ";
+        cin >> pl.population;
+        cout << "Enter planet's acceleration of gravity: ";
+        cin >> pl.g;
+        eatline();
+        fout.write((char *) &pl, sizeof pl);
+        cout << "Enter planet name(enter a blank line "
+             "to quit):\n";
+        cin.get(pl.name, 20);
+    }
+    fout.close();
+
+    // show file
+    fin.clear();
+    fin.open(file, ios_base::in | ios_base::binary);
+
+    cin.get();
     cin.get();
     return 0;
 }
