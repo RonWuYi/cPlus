@@ -83,8 +83,8 @@ int main(int argc, char *argv[]){
 
     // Reading the Data
     struct SwsContext *sws_ctx =NULL;
-    int frameFinished;
-    AVPacket *packet = NULL;
+    int frameFinished = 0;
+    AVPacket *packet;
     // Initialize SWS context for software scaling
 
     sws_ctx = sws_getContext(pCodecCtxOrig1->width,
@@ -102,7 +102,8 @@ int main(int argc, char *argv[]){
     int ret;
     //int *got_frame;
     // ToDo bug here
-    while (av_read_frame(pFormatCtx, packet)>0){
+    packet=(AVPacket *)av_malloc(sizeof(AVPacket));
+    while (av_read_frame(pFormatCtx, packet)>=0){
 
         // Is this a packet from the video stream?
         if (packet->stream_index==videoStream){
@@ -124,11 +125,10 @@ int main(int argc, char *argv[]){
         if (ret >= 0)
 //            *got_frame = 1;
             frameFinished = 1;
-        else
-            frameFinished = -1;
 
         if (frameFinished){
             // Convert the image from its native format to RGB
+//            sws_ctx = sws_getContext(pCodecCtxOrig1->width, pCodecCtxOrig1->height, pCodecCtxOrig1->pix_fmt, pCodecCtxOrig1->width, pCodecCtxOrig1->height, AV_PIX_FMT_YUV420P, SWS_BICUBIC, NULL, NULL, NULL);
             sws_scale(sws_ctx, (uint8_t const * const *)pFrame->data,
                       pFrame->linesize, 0, pCodecCtxOrig1->height,
                       pFrameRGB->data, pFrameRGB->linesize);
@@ -164,7 +164,7 @@ void SaveFrame(AVFrame *pFrame, int width, int height, int iFrame){
 
     // Open file
     sprintf(szFilename, "frame%d.ppm", iFrame);
-    pFile=fopen(szFilename, "wb");
+    pFile=fopen(szFilename, "wb+");
     if (pFile==NULL)
         return;
 
