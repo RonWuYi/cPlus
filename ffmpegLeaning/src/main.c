@@ -3,12 +3,30 @@
 #include <libswscale/swscale.h>
 #include <libavutil/imgutils.h>
 
+#include <stdio.h>
+
 void SaveFrame(AVFrame *pFrame, int width, int height, int iFrame);
 
 int main(int argc, char *argv[]){
 //    av_register_all();
     AVFormatContext *pFormatCtx = NULL;
+    int i, videoStream;
+    AVCodecContext *pCodecCtxOrig = NULL;
+//    AVCodecContext *pCodecCtxOrig2 = NULL;
+    AVCodecParameters *pCodecCtx = NULL;
+    AVCodec *pCodec =NULL;
+    AVFrame *pFrame = NULL;
+    AVFrame *pFrameRGB = NULL;
+    AVPacket *packet;
+    int frameFinished = 0;
+    int numBytesYUV;
+    uint8_t *buffer = NULL;
+
+    // Reading the Data
+    struct SwsContext *sws_ctx =NULL;
+    AVDictionary *optionDict =  NULL;
     char filepath[]="C:\\Users\\Public\\Videos\\Sample Videos\\Wildlife.wmv";
+
     // Open video file
     if (avformat_open_input(&pFormatCtx, filepath, NULL, NULL)!=0){
         return -1;
@@ -19,14 +37,6 @@ int main(int argc, char *argv[]){
 
     // Dump information
     av_dump_format(pFormatCtx, 0, argv[1], 0);
-
-    int i;
-    AVCodecContext *pCodecCtxOrig1 = NULL;
-//    AVCodecContext *pCodecCtxOrig2 = NULL;
-    AVCodecParameters *pCodecCtx = NULL;
-
-    // Find the first video stream
-    int videoStream=-1;
 
     for (i = 0; i < pFormatCtx->nb_streams; ++i) {
         if (pFormatCtx->streams[i]->codecpar->codec_type==AVMEDIA_TYPE_VIDEO){
@@ -40,8 +50,6 @@ int main(int argc, char *argv[]){
 
     pCodecCtx=pFormatCtx->streams[videoStream]->codecpar;
 
-    AVCodec *pCodec =NULL;
-
     // Find the decoder for the video stream
     pCodec=avcodec_find_decoder(pCodecCtx->codec_id);
     if (pCodec==NULL){
@@ -49,55 +57,82 @@ int main(int argc, char *argv[]){
         return -1;
     }
 
-    // Copy context
-    pCodecCtxOrig1 = avcodec_alloc_context3(pCodec);
-    avcodec_parameters_to_context(pCodecCtxOrig1, pCodecCtx);
-
-    if (avcodec_parameters_to_context(pCodecCtxOrig1, pCodecCtx)!=0){
-        fprintf(stderr, "Couldn't copy codec context");
-        return -1;
-    };
-
     // Open codec
-    if(avcodec_open2(pCodecCtxOrig1, pCodec, NULL)<0)
+//     avcodec_decode_video2()
+    if(avcodec_open2(pCodecCtxOrig, pCodec, NULL)<0)
         return -1;
 
-    AVFrame *pFrame = NULL;
     pFrame=av_frame_alloc();
 
     // Allocate an AVFrame structure
-    AVFrame *pFrameRGB = NULL;
+
     pFrameRGB=av_frame_alloc();
     if (pFrameRGB==NULL)
         return -1;
 
-    uint8_t *buffer = NULL;
-    int numBytes;
+    // Determine required buffer size and allocate buffer
+    numBytesYUV = av_image_get_buffer_size(AV_PIX_FMT_YUV420P, pCodecCtx->width, pCodecCtx->height, 1);
+
+    buffer=(uint8_t *)av_malloc(numBytesYUV * sizeof(uint8_t));
+
+    // Copy context
+    pCodecCtxOrig = avcodec_alloc_context3(pCodec);
+
+    // Decoder
+    avcodec_parameters_to_context(pCodecCtxOrig, pCodecCtx);
+    if (avcodec_parameters_to_context(pCodecCtxOrig, pCodecCtx)!=0){
+        fprintf(stderr, "Couldn't copy codec context");
+        return -1;
+    };
+
+    sws_ctx = sws_getContext(pCodecCtxOrig->width,
+                             pCodecCtxOrig->height,
+                             pCodecCtxOrig->pix_fmt,
+                             pCodecCtxOrig->width,
+                             pCodecCtxOrig->height,
+                             AV_PIX_FMT_YUV420P,
+                             SWS_BILINEAR,
+                             NULL,
+                             NULL,
+                             NULL
+    );
+
+    av_image_fill_arrays(pFrame->data, pFrame->linesize, buffer, AV_PIX_FMT_YUV420P, pCodecCtxOrig->width, pCodecCtxOrig->height, 1);
+
+    /*
+    int numBytesRGB;
     // Determin required buffer size and allocate buffer
-    numBytes = av_image_get_buffer_size(AV_PIX_FMT_RGB24, pCodecCtx->width, pCodecCtx->height, 1);
-    buffer=(uint8_t *)av_malloc(numBytes * sizeof(uint8_t));
+    // deprecated function
+//    avpicture_get_size();
+//    avpicture_fill();
+
+    numBytesRGB = av_image_get_buffer_size(AV_PIX_FMT_RGB24, pCodecCtx->width, pCodecCtx->height, 1);
+
+    buffer=(uint8_t *)av_malloc(numBytesRGB * sizeof(uint8_t));
+    */
+
 
     // Assign appropriate parts of buffer to image planes in pFrameRGB
     // avpicture_fill();
-    av_image_fill_arrays(pFrame->data, pFrame->linesize, buffer, AV_PIX_FMT_RGB24, pCodecCtxOrig1->width, pCodecCtxOrig1->height, 1);
 
-    // Reading the Data
-    struct SwsContext *sws_ctx =NULL;
-    int frameFinished = 0;
-    AVPacket *packet;
+
+
     // Initialize SWS context for software scaling
 
-    sws_ctx = sws_getContext(pCodecCtxOrig1->width,
-                             pCodecCtxOrig1->height,
-                             pCodecCtxOrig1->pix_fmt,
-                             pCodecCtxOrig1->width,
-                             pCodecCtxOrig1->height,
+    /*
+    sws_ctx = sws_getContext(pCodecCtxOrig->width,
+                             pCodecCtxOrig->height,
+                             pCodecCtxOrig->pix_fmt,
+                             pCodecCtxOrig->width,
+                             pCodecCtxOrig->height,
                              AV_PIX_FMT_RGB24,
                              SWS_BILINEAR,
                              NULL,
                              NULL,
                              NULL
                             );
+    */
+
     i=0;
     int ret;
     //int *got_frame;
@@ -109,15 +144,13 @@ int main(int argc, char *argv[]){
         if (packet->stream_index==videoStream){
             // Decode video frame
             // avcodec_decode_video2();
-            ret = avcodec_send_packet(pCodecCtxOrig1, packet);
+            ret = avcodec_send_packet(pCodecCtxOrig, packet);
 
             if (ret < 0){
                 return ret == AVERROR_EOF ? 0 : ret;
             }
 
-        }
-
-        ret = avcodec_receive_frame(pCodecCtxOrig1, pFrame);
+        ret = avcodec_receive_frame(pCodecCtxOrig, pFrame);
 
         if (ret < 0 &&ret!=AVERROR(EAGAIN)&&ret!=AVERROR_EOF)
             return ret;
@@ -128,17 +161,19 @@ int main(int argc, char *argv[]){
 
         if (frameFinished){
             // Convert the image from its native format to RGB
-//            sws_ctx = sws_getContext(pCodecCtxOrig1->width, pCodecCtxOrig1->height, pCodecCtxOrig1->pix_fmt, pCodecCtxOrig1->width, pCodecCtxOrig1->height, AV_PIX_FMT_YUV420P, SWS_BICUBIC, NULL, NULL, NULL);
+//            sws_ctx = sws_getContext(pCodecCtxOrig->width, pCodecCtxOrig->height, pCodecCtxOrig->pix_fmt, pCodecCtxOrig->width, pCodecCtxOrig->height, AV_PIX_FMT_YUV420P, SWS_BICUBIC, NULL, NULL, NULL);
             sws_scale(sws_ctx, (uint8_t const * const *)pFrame->data,
-                      pFrame->linesize, 0, pCodecCtxOrig1->height,
+                      pFrame->linesize, 0, pCodecCtxOrig->height,
                       pFrameRGB->data, pFrameRGB->linesize);
             // Save the frame to disk
             if (++i<=5)
-                SaveFrame(pFrameRGB, pCodecCtxOrig1->width, pCodecCtxOrig1->height, 1);
+                SaveFrame(pFrameRGB, pCodecCtxOrig->width, pCodecCtxOrig->height, 1);
 
         }
+        }
+        av_packet_unref(packet);
     }
-    av_packet_unref(packet);
+
 
     // Free the RGB image
     av_free(buffer);
@@ -148,7 +183,7 @@ int main(int argc, char *argv[]){
     av_free(pFrame);
 
     // Close the codecs
-    avcodec_close(pCodecCtxOrig1);
+    avcodec_close(pCodecCtxOrig);
 
     // Close the vidoe file
     avformat_close_input(&pFormatCtx);
