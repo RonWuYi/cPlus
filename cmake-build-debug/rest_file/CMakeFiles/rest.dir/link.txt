@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g  -Wl,--enable-auto-import CMakeFiles/rest.dir/1.cpp.o  -o ../bin/rest.exe -Wl,--out-implib,librest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o  -o ../bin/ffmpegLeaning.exe -Wl,--out-implib,libffmpegLeaning.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -lSDL2 -lSDL2main -lavutil -lavformat -lavcodec -lswscale -lswresample 

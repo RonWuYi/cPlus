@@ -121,7 +121,8 @@ int main(int argc, char *argv[]){
                              NULL
     );
 
-    av_image_fill_arrays(pFrame->data, pFrame->linesize, buffer, AV_PIX_FMT_YUV420P, pCodecCtxOrig->width, pCodecCtxOrig->height, 1);
+    av_image_fill_arrays(pFrame->data, pFrame->linesize, buffer,
+                         AV_PIX_FMT_YUV420P, pCodecCtxOrig->width, pCodecCtxOrig->height, 1);
 
     /*
     int numBytesRGB;
