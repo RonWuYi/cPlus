@@ -5,7 +5,7 @@
 		<Option title="cPlus"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\ffmpegLeaning\;CMake Files\MathFunctions\;CMake Files\rest_file\;CMake Files\sdlLeaning\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\MathFunctions\;CMake Files\ffmpegLeaning\;CMake Files\rest_file\;CMake Files\sdlLeaning\;CMake Files\cmakeLeaning\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug"/>
@@ -77,98 +77,6 @@
 					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="CLeaning">
-				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/CLeaning.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/c/Work/cPlus/include"/>
-					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 CLeaning"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="CLeaning/fast">
-				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/CLeaning.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/c/Work/cPlus/include"/>
-					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 CLeaning/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ffmpegLeaning">
-				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/ffmpegLeaning.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/c/Work/cPlus/include"/>
-					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 ffmpegLeaning"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ffmpegLeaning/fast">
-				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/ffmpegLeaning.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/c/Work/cPlus/include"/>
-					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 ffmpegLeaning/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="MathFunctions">
 				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/MathFunctions/libMathFunctions.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/MathFunctions"/>
@@ -176,8 +84,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/c/Work/cPlus/include"/>
-					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -199,8 +106,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/c/Work/cPlus/include"/>
-					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -215,6 +121,106 @@
 					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/MathFunctions/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="CLeaning">
+				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/CLeaning.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
+					<Add directory="/cygdrive/c/Work/cPlus/include"/>
+					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 CLeaning"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CLeaning/fast">
+				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/CLeaning.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
+					<Add directory="/cygdrive/c/Work/cPlus/include"/>
+					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 CLeaning/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ffmpegLeaning">
+				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/ffmpegLeaning.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
+					<Add directory="/cygdrive/c/Work/cPlus/include"/>
+					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 ffmpegLeaning"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ffmpegLeaning/fast">
+				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/ffmpegLeaning.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
+					<Add directory="/cygdrive/c/Work/cPlus/include"/>
+					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 ffmpegLeaning/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rest">
 				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/rest.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
@@ -222,8 +228,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
 					<Add directory="/cygdrive/c/Work/cPlus/include"/>
 					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -245,8 +253,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
 					<Add directory="/cygdrive/c/Work/cPlus/include"/>
 					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -268,8 +278,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
 					<Add directory="/cygdrive/c/Work/cPlus/include"/>
 					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -291,8 +303,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
 					<Add directory="/cygdrive/c/Work/cPlus/include"/>
 					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -307,6 +321,58 @@
 					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/sdlLeaning/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="cmakeLeaning">
+				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/cmakeLeaning.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
+					<Add directory="/cygdrive/c/Work/cPlus/include"/>
+					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
+					<Add directory="/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 cmakeLeaning"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cmakeLeaning/fast">
+				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/cmakeLeaning.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
+					<Add directory="/cygdrive/c/Work/cPlus/include"/>
+					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
+					<Add directory="/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 cmakeLeaning/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/cygdrive/c/Work/cPlus/CLeaning/src/main.c">
 			<Option target="CLeaning"/>
@@ -317,7 +383,13 @@
 		<Unit filename="/cygdrive/c/Work/cPlus/MathFunctions/mysqrt.cpp">
 			<Option target="MathFunctions"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/src/sdlExample.c">
+		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/src/main.c">
+			<Option target="cmakeLeaning"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/src/example.c">
+			<Option target="ffmpegLeaning"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/src/success.cpp">
 			<Option target="ffmpegLeaning"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Work/cPlus/rest_file/1.cpp">
@@ -335,15 +407,15 @@
 		<Unit filename="/cygdrive/c/Work/cPlus/CLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CLeaning\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
-		</Unit>
 		<Unit filename="/cygdrive/c/Work/cPlus/MathFunctions/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\MathFunctions\"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Work/cPlus/rest_file/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\rest_file\"/>
 		</Unit>
@@ -355,6 +427,18 @@
 		</Unit>
 		<Unit filename="/cygdrive/c/Work/cPlus/sdlLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\sdlLeaning\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/Config.h.in">
+			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/Config.h.in">
+			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

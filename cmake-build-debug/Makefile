@@ -157,6 +157,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named MathFunctions
+
+# Build rule for target.
+MathFunctions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MathFunctions
+.PHONY : MathFunctions
+
+# fast build rule for target.
+MathFunctions/fast:
+	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
+.PHONY : MathFunctions/fast
+
+#=============================================================================
 # Target rules for targets named CLeaning
 
 # Build rule for target.
@@ -181,19 +194,6 @@ ffmpegLeaning: cmake_check_build_system
 ffmpegLeaning/fast:
 	$(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build
 .PHONY : ffmpegLeaning/fast
-
-#=============================================================================
-# Target rules for targets named MathFunctions
-
-# Build rule for target.
-MathFunctions: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MathFunctions
-.PHONY : MathFunctions
-
-# fast build rule for target.
-MathFunctions/fast:
-	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
-.PHONY : MathFunctions/fast
 
 #=============================================================================
 # Target rules for targets named rest
@@ -221,6 +221,19 @@ sdlLeaning/fast:
 	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/build
 .PHONY : sdlLeaning/fast
 
+#=============================================================================
+# Target rules for targets named cmakeLeaning
+
+# Build rule for target.
+cmakeLeaning: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cmakeLeaning
+.PHONY : cmakeLeaning
+
+# fast build rule for target.
+cmakeLeaning/fast:
+	$(MAKE) -f cmakeLeaning/CMakeFiles/cmakeLeaning.dir/build.make cmakeLeaning/CMakeFiles/cmakeLeaning.dir/build
+.PHONY : cmakeLeaning/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,11 +246,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... MathFunctions"
 	@echo "... CLeaning"
 	@echo "... ffmpegLeaning"
-	@echo "... MathFunctions"
 	@echo "... rest"
 	@echo "... sdlLeaning"
+	@echo "... cmakeLeaning"
 .PHONY : help
 
 

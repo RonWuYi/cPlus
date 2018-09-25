@@ -27,3 +27,21 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/cygdrive/c/Work/cPlus/bin/ffmpegLeaning.exe")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/cygdrive/c/Work/cPlus/bin" TYPE EXECUTABLE FILES "/cygdrive/c/Work/cPlus/cmake-build-debug/bin/ffmpegLeaning.exe")
+  if(EXISTS "$ENV{DESTDIR}/cygdrive/c/Work/cPlus/bin/ffmpegLeaning.exe" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/cygdrive/c/Work/cPlus/bin/ffmpegLeaning.exe")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip.exe" "$ENV{DESTDIR}/cygdrive/c/Work/cPlus/bin/ffmpegLeaning.exe")
+    endif()
+  endif()
+endif()
+

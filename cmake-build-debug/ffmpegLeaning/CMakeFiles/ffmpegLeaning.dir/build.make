@@ -57,41 +57,67 @@ include ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/progress.make
 # Include the compile flags for this target's objects.
 include ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/flags.make
 
-ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/flags.make
-ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o: ../ffmpegLeaning/src/sdlExample.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Work/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o"
-	cd /cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o   -c /cygdrive/c/Work/cPlus/ffmpegLeaning/src/sdlExample.c
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/flags.make
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o: ../ffmpegLeaning/src/example.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Work/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o"
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ffmpegLeaning.dir/src/example.c.o   -c /cygdrive/c/Work/cPlus/ffmpegLeaning/src/example.c
 
-ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.i"
-	cd /cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Work/cPlus/ffmpegLeaning/src/sdlExample.c > CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.i
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ffmpegLeaning.dir/src/example.c.i"
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Work/cPlus/ffmpegLeaning/src/example.c > CMakeFiles/ffmpegLeaning.dir/src/example.c.i
 
-ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.s"
-	cd /cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Work/cPlus/ffmpegLeaning/src/sdlExample.c -o CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.s
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffmpegLeaning.dir/src/example.c.s"
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Work/cPlus/ffmpegLeaning/src/example.c -o CMakeFiles/ffmpegLeaning.dir/src/example.c.s
 
-ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o.requires:
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o.requires:
 
-.PHONY : ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o.requires
+.PHONY : ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o.requires
 
-ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o.provides: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o.requires
-	$(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o.provides.build
-.PHONY : ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o.provides
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o.provides: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o.requires
+	$(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o.provides.build
+.PHONY : ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o.provides
 
-ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o.provides.build: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o.provides.build: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o
+
+
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/flags.make
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o: ../ffmpegLeaning/src/success.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Work/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o"
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning && /usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o -c /cygdrive/c/Work/cPlus/ffmpegLeaning/src/success.cpp
+
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ffmpegLeaning.dir/src/success.cpp.i"
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Work/cPlus/ffmpegLeaning/src/success.cpp > CMakeFiles/ffmpegLeaning.dir/src/success.cpp.i
+
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ffmpegLeaning.dir/src/success.cpp.s"
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Work/cPlus/ffmpegLeaning/src/success.cpp -o CMakeFiles/ffmpegLeaning.dir/src/success.cpp.s
+
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o.requires:
+
+.PHONY : ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o.requires
+
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o.provides: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o.requires
+	$(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o.provides.build
+.PHONY : ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o.provides
+
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o.provides.build: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o
 
 
 # Object files for target ffmpegLeaning
 ffmpegLeaning_OBJECTS = \
-"CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o"
+"CMakeFiles/ffmpegLeaning.dir/src/example.c.o" \
+"CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o"
 
 # External object files for target ffmpegLeaning
 ffmpegLeaning_EXTERNAL_OBJECTS =
 
-bin/ffmpegLeaning.exe: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o
+bin/ffmpegLeaning.exe: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o
+bin/ffmpegLeaning.exe: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o
 bin/ffmpegLeaning.exe: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make
 bin/ffmpegLeaning.exe: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Work/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../bin/ffmpegLeaning.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Work/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/ffmpegLeaning.exe"
 	cd /cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ffmpegLeaning.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +125,8 @@ ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build: bin/ffmpegLeaning.exe
 
 .PHONY : ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build
 
-ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/requires: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o.requires
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/requires: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o.requires
+ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/requires: ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o.requires
 
 .PHONY : ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/requires
 

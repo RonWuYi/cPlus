@@ -29,11 +29,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/cygdrive/c/Work/cPlus/cmake-build-debug/MathFunctions/cmake_install.cmake")
   include("/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/cmake_install.cmake")
   include("/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/cmake_install.cmake")
-  include("/cygdrive/c/Work/cPlus/cmake-build-debug/MathFunctions/cmake_install.cmake")
   include("/cygdrive/c/Work/cPlus/cmake-build-debug/rest_file/cmake_install.cmake")
   include("/cygdrive/c/Work/cPlus/cmake-build-debug/sdlLeaning/cmake_install.cmake")
+  include("/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/cmake_install.cmake")
 
 endif()
 

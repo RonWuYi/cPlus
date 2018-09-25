@@ -21,14 +21,19 @@ else()
     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS} ${CMAKE_CXX_FLAGS_RELEASE} -O2")
 endif()
 
+include_directories ("${PROJECT_SOURCE_DIR}/MathFunctions")
+add_subdirectory (MathFunctions)
+
 include_directories(include)
 include_directories(Header)
+include_directories(lib/x64)
 
 add_subdirectory(CLeaning)
 add_subdirectory(ffmpegLeaning)
-add_subdirectory(MathFunctions)
 add_subdirectory(rest_file)
 add_subdirectory(sdlLeaning)
+add_subdirectory(cmakeLeaning)
+#add_subdirectory(MathFunctions)
 
 if (NOT ${PROJECT_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_BINARY_DIR})
     file(COPY "${PROJECT_SOURCE_DIR}/res" DESTINATION ${CMAKE_CURRENT_BINARY_DIR})

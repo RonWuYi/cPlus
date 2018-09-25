@@ -1,11 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o"
+  "CMakeFiles/ffmpegLeaning.dir/src/example.c.o"
+  "CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o"
   "../bin/ffmpegLeaning.pdb"
   "../bin/ffmpegLeaning.exe"
   "libffmpegLeaning.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C)
+foreach(lang C CXX)
   include(CMakeFiles/ffmpegLeaning.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

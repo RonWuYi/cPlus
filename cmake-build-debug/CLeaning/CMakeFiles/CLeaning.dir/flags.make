@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/cygdrive/c/Work/cPlus/include -I/cygdrive/c/Work/cPlus/Header 
+C_INCLUDES = -I/cygdrive/c/Work/cPlus/MathFunctions -I/cygdrive/c/Work/cPlus/include -I/cygdrive/c/Work/cPlus/Header -I/cygdrive/c/Work/cPlus/lib/x64 
 

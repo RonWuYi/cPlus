@@ -171,32 +171,59 @@ ffmpegLeaning/fast:
 	cd /cygdrive/c/Work/cPlus/cmake-build-debug && $(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build
 .PHONY : ffmpegLeaning/fast
 
-src/sdlExample.o: src/sdlExample.c.o
+src/example.o: src/example.c.o
 
-.PHONY : src/sdlExample.o
+.PHONY : src/example.o
 
 # target to build an object file
-src/sdlExample.c.o:
-	cd /cygdrive/c/Work/cPlus/cmake-build-debug && $(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.o
-.PHONY : src/sdlExample.c.o
+src/example.c.o:
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug && $(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o
+.PHONY : src/example.c.o
 
-src/sdlExample.i: src/sdlExample.c.i
+src/example.i: src/example.c.i
 
-.PHONY : src/sdlExample.i
+.PHONY : src/example.i
 
 # target to preprocess a source file
-src/sdlExample.c.i:
-	cd /cygdrive/c/Work/cPlus/cmake-build-debug && $(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.i
-.PHONY : src/sdlExample.c.i
+src/example.c.i:
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug && $(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.i
+.PHONY : src/example.c.i
 
-src/sdlExample.s: src/sdlExample.c.s
+src/example.s: src/example.c.s
 
-.PHONY : src/sdlExample.s
+.PHONY : src/example.s
 
 # target to generate assembly for a file
-src/sdlExample.c.s:
-	cd /cygdrive/c/Work/cPlus/cmake-build-debug && $(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/sdlExample.c.s
-.PHONY : src/sdlExample.c.s
+src/example.c.s:
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug && $(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.s
+.PHONY : src/example.c.s
+
+src/success.o: src/success.cpp.o
+
+.PHONY : src/success.o
+
+# target to build an object file
+src/success.cpp.o:
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug && $(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o
+.PHONY : src/success.cpp.o
+
+src/success.i: src/success.cpp.i
+
+.PHONY : src/success.i
+
+# target to preprocess a source file
+src/success.cpp.i:
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug && $(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.i
+.PHONY : src/success.cpp.i
+
+src/success.s: src/success.cpp.s
+
+.PHONY : src/success.s
+
+# target to generate assembly for a file
+src/success.cpp.s:
+	cd /cygdrive/c/Work/cPlus/cmake-build-debug && $(MAKE) -f ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/build.make ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.s
+.PHONY : src/success.cpp.s
 
 # Help Target
 help:
@@ -211,9 +238,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ffmpegLeaning"
-	@echo "... src/sdlExample.o"
-	@echo "... src/sdlExample.i"
-	@echo "... src/sdlExample.s"
+	@echo "... src/example.o"
+	@echo "... src/example.i"
+	@echo "... src/example.s"
+	@echo "... src/success.o"
+	@echo "... src/success.i"
+	@echo "... src/success.s"
 .PHONY : help
 
 

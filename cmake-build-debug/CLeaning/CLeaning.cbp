@@ -5,7 +5,7 @@
 		<Option title="CLeaning"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\ffmpegLeaning\;CMake Files\MathFunctions\;CMake Files\rest_file\;CMake Files\sdlLeaning\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\MathFunctions\;CMake Files\ffmpegLeaning\;CMake Files\rest_file\;CMake Files\sdlLeaning\;CMake Files\cmakeLeaning\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning"/>
@@ -24,8 +24,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
 					<Add directory="/cygdrive/c/Work/cPlus/include"/>
 					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -47,8 +49,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
 					<Add directory="/cygdrive/c/Work/cPlus/include"/>
 					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
+					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
@@ -76,15 +80,15 @@
 		<Unit filename="/cygdrive/c/Work/cPlus/CLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CLeaning\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
-		</Unit>
 		<Unit filename="/cygdrive/c/Work/cPlus/MathFunctions/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\MathFunctions\"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Work/cPlus/rest_file/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\rest_file\"/>
 		</Unit>
@@ -96,6 +100,18 @@
 		</Unit>
 		<Unit filename="/cygdrive/c/Work/cPlus/sdlLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\sdlLeaning\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/Config.h.in">
+			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/Config.h.in">
+			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

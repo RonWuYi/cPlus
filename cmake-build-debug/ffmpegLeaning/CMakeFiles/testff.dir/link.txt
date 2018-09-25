@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/testff.dir/src/sdlExample.c.o  -o ../bin/testff.exe -Wl,--out-implib,libtestff.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
