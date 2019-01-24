@@ -18,6 +18,30 @@ typedef signed char     uc_int8;    /**< Signed 8-bit integer */
 typedef int             uc_intptr;  /**< Signed int of the same size as a pointer */
 typedef unsigned int    uc_uintptr; /**< Unsigned int of the same size as a pointer */
 
+#define UC_PVR_RECORDCONFIG_FILE_NAME       "PVRRecordConfig.bin"
+#define UC_CHECKPRODUCT_LIST_FILE_NAME      "CheckProductList.bin"
+#define UC_IFCP_DEVICE_FILE_NAME                        "IFCPDeviceData.bin"
+#define UC_IFCP_DEVICE_KEY_FILE_NAME                "IFCPDeviceKeyData.bin"
+#define UC_PS_PROPERTY_FILE_NAME            "PSProperty.bin"
+#define UC_CSSN_SIZE (4)
+#define UC_CSUK_SIZE (16)
+#define UC_CPUK_SIZE (16)
+#define UC_TAUK_SIZE (16)
+#define UC_CSSK_SIZE (16)
+#define UC_OTTSK_SIZE (16)
+#define UC_CPSK_SIZE (16)
+#define UC_PVRMSK_SIZE (16)
+#define UC_PVRRK_SIZE (16)
+#define UC_PRIVATE_DATA_SIZE (16)
+#define UC_PRIVATE_DATA_MAXSIZE (1024)
+#define UC_SERVICE_ID_SIZE (2)
+#define UC_TRANSPORT_ID_SIZE (2)
+#define UC_NETWORK_ID_SIZE (2)
+#define UC_PRE_ENABLEMENT_PESK_SIZE (256)
+#define UC_PRE_ENABLEMENT_PERSONALIZED_DATA_MAXSIZE (1024)
+#define UC_IFCP_APP_CONTROL_FEATURE_BITMAP_SIZE (4)
+#define UC_IFCP_CONTENT_USAGE_RULE_SIZE   (4)
+
 typedef struct _HostDeviceDataPersonalizedData
 {
     uc_uint32 vLength;
