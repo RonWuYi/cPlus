@@ -1,33 +1,22 @@
 #include <stdio.h>
+#include "a.h"
 
-#define MAXLINE 1000
-
-int get_line(char line[], int maxline);
-
-int main(void)
-{
-    int len; /* current line length */
-    char line[MAXLINE]; /* current input line */
-
-    while ((len = get_line(line, MAXLINE)) > 0) {
-        if (len == 1 && line[0] == '\n')
-            continue;
-        printf("%s\n", line);
-    }
-
-    return 0;
+int func(void){
+    static int count = 10;
+    return count--;
 }
 
-int get_line(char s[], int lim)
-{
-    int c, i, l;
 
-    for (i = 0, l = 0; (c = getchar()) != EOF && c != '\n'; ++i)
-        if (i < lim - 1)
-            s[l++] = c;
-    if (c == '\n' && l < lim - 1)
-        s[l++] = c;
-    s[l] = '\0';
+int count = 1;
+int aa;
+int main(void){
+    printf("global\t\tlocal static\n");
+    for (; count < 10; ++count) {
+        printf("%d\t\t\t\t%d\n", count, func());
 
-    return l;
+    }
+    int i;
+    static char str[10];
+    printf("integer: %d; string:(begin)%s(end)", aa, str);
+    return 0;
 }

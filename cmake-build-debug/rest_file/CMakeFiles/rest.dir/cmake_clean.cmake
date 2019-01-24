@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rest.dir/1.cpp.o"
   "../bin/rest.pdb"
-  "../bin/rest.exe"
-  "librest.dll.a"
+  "../bin/rest"
 )
 
 # Per-language clean rules from dependency scanning.

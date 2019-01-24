@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/c/Work/cPlus
+# Install script for directory: /home/hdc/CLionProjects/cPlus
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,14 +27,21 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/cygdrive/c/Work/cPlus/cmake-build-debug/MathFunctions/cmake_install.cmake")
-  include("/cygdrive/c/Work/cPlus/cmake-build-debug/CLeaning/cmake_install.cmake")
-  include("/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/cmake_install.cmake")
-  include("/cygdrive/c/Work/cPlus/cmake-build-debug/rest_file/cmake_install.cmake")
-  include("/cygdrive/c/Work/cPlus/cmake-build-debug/sdlLeaning/cmake_install.cmake")
-  include("/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/cmake_install.cmake")
+  include("/home/hdc/CLionProjects/cPlus/cmake-build-debug/MathFunctions/cmake_install.cmake")
+  include("/home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning/cmake_install.cmake")
+  include("/home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/c/Work/cPlus/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hdc/CLionProjects/cPlus/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

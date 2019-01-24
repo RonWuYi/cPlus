@@ -2,8 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ffmpegLeaning.dir/src/example.c.o"
   "CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o"
   "../bin/ffmpegLeaning.pdb"
-  "../bin/ffmpegLeaning.exe"
-  "libffmpegLeaning.dll.a"
+  "../bin/ffmpegLeaning"
 )
 
 # Per-language clean rules from dependency scanning.

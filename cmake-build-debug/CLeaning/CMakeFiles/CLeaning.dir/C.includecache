@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Work/cPlus/CLeaning/src/main.c
+/home/hdc/CLionProjects/cPlus/CLeaning/src/main002.c
 stdio.h
+-
+stdlib.h
 -
 

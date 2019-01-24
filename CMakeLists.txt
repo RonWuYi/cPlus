@@ -29,10 +29,10 @@ include_directories(Header)
 include_directories(lib/x64)
 
 add_subdirectory(CLeaning)
-add_subdirectory(ffmpegLeaning)
-add_subdirectory(rest_file)
+#add_subdirectory(ffmpegLeaning)
+#add_subdirectory(rest_file)
 add_subdirectory(sdlLeaning)
-add_subdirectory(cmakeLeaning)
+#add_subdirectory(cmakeLeaning)
 #add_subdirectory(MathFunctions)
 
 #if (NOT ${PROJECT_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_BINARY_DIR})

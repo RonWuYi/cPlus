@@ -8,111 +8,97 @@
 		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\MathFunctions\;CMake Files\ffmpegLeaning\;CMake Files\rest_file\;CMake Files\sdlLeaning\;CMake Files\cmakeLeaning\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cmakeLeaning">
-				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/cmakeLeaning.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin/cmakeLeaning" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
-					<Add directory="/cygdrive/c/Work/cPlus/include"/>
-					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
-					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
-					<Add directory="/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 cmakeLeaning"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 cmakeLeaning"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cmakeLeaning/fast">
-				<Option output="/cygdrive/c/Work/cPlus/cmake-build-debug/bin/cmakeLeaning.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Work/cPlus/cmake-build-debug/bin"/>
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin/cmakeLeaning" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/cygdrive/c/Work/cPlus/MathFunctions"/>
-					<Add directory="/cygdrive/c/Work/cPlus/include"/>
-					<Add directory="/cygdrive/c/Work/cPlus/Header"/>
-					<Add directory="/cygdrive/c/Work/cPlus/lib/x64"/>
-					<Add directory="/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 cmakeLeaning/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Work/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 cmakeLeaning/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/cmakeLeaning/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/src/main.c">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmakeLeaning/src/main.c">
 			<Option target="cmakeLeaning"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/CMakeLists.txt">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/CLeaning/CMakeLists.txt">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CLeaning\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/CLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\CLeaning\"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/MathFunctions/CMakeLists.txt">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/MathFunctions/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\MathFunctions\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/CMakeLists.txt">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/ffmpegLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/ffmpegLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/rest_file/CMakeLists.txt">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\rest_file\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/rest_file/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\rest_file\"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/sdlLeaning/CMakeLists.txt">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\sdlLeaning\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/sdlLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\sdlLeaning\"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/CMakeLists.txt">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmakeLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/Config.h.in">
-			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Work/cPlus/cmakeLeaning/Config.h.in">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmakeLeaning/Config.h.in">
 			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
 		</Unit>
 	</Project>

@@ -1,1 +1,1 @@
-/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/cmakeLeaning.dir/src/main.c.o  -o ../bin/cmakeLeaning.exe -Wl,--out-implib,libcmakeLeaning.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -lSDL2 -lSDL2main -lavutil -lavformat -lavcodec -lswscale -lswresample 
+/usr/bin/cc -g   CMakeFiles/cmakeLeaning.dir/src/main.c.o  -o ../bin/cmakeLeaning -lSDL2 -lSDL2main -lavutil -lavformat -lavcodec -lswscale -lswresample 

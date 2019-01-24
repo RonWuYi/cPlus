@@ -266,7 +266,7 @@ libavutil/pixfmt.h
 version.h
 ../include/libswscale/version.h
 
-/cygdrive/c/Work/cPlus/ffmpegLeaning/src/example.c
+/home/hdc/CLionProjects/cPlus/ffmpegLeaning/src/example.c
 libavcodec/avcodec.h
 -
 libavformat/avformat.h

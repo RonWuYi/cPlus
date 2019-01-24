@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Work/cPlus/MathFunctions/MakeTable.cpp" "/cygdrive/c/Work/cPlus/cmake-build-debug/MathFunctions/CMakeFiles/MathFunctions.dir/MakeTable.cpp.o"
-  "/cygdrive/c/Work/cPlus/MathFunctions/mysqrt.cpp" "/cygdrive/c/Work/cPlus/cmake-build-debug/MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cpp.o"
+  "/home/hdc/CLionProjects/cPlus/MathFunctions/MakeTable.cpp" "/home/hdc/CLionProjects/cPlus/cmake-build-debug/MathFunctions/CMakeFiles/MathFunctions.dir/MakeTable.cpp.o"
+  "/home/hdc/CLionProjects/cPlus/MathFunctions/mysqrt.cpp" "/home/hdc/CLionProjects/cPlus/cmake-build-debug/MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

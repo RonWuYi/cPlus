@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Header/res_path.h
+iostream
+-
+string
+-
+SDL.h
+-
+
+/home/hdc/CLionProjects/cPlus/rest_file/1.cpp
+iostream
+-
+SDL.h
+-
+res_path.h
+/home/hdc/CLionProjects/cPlus/rest_file/res_path.h
+

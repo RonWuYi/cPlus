@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hdc/CLionProjects/cPlus/MathFunctions/MakeTable.cpp
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+
+/home/hdc/CLionProjects/cPlus/MathFunctions/MathFunctions.h
+
+/home/hdc/CLionProjects/cPlus/MathFunctions/mysqrt.cpp
+MathFunctions.h
+/home/hdc/CLionProjects/cPlus/MathFunctions/MathFunctions.h
+stdio.h
+-
+

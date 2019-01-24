@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Work/cPlus/sdlLeaning/src/sdlEx.cpp" "/cygdrive/c/Work/cPlus/cmake-build-debug/sdlLeaning/CMakeFiles/sdlLeaning.dir/src/sdlEx.cpp.o"
+  "/home/hdc/CLionProjects/cPlus/sdlLeaning/src/sdlEx001.cpp" "/home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning/CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

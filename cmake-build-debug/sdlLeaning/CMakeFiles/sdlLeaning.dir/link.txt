@@ -1,1 +1,1 @@
-/usr/bin/c++.exe  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g  -Wl,--enable-auto-import CMakeFiles/sdlLeaning.dir/src/sdlEx.cpp.o  -o ../bin/sdlLeaning.exe -Wl,--out-implib,libsdlLeaning.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -lSDL2 -lSDL2main -lavutil -lavformat -lavcodec -lswscale -lswresample 
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g   CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.o  -o ../bin/sdlLeaning -lSDL2 -lSDL2main 

@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Work/cPlus/ffmpegLeaning/src/example.c" "/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o"
+  "/home/hdc/CLionProjects/cPlus/ffmpegLeaning/src/example.c" "/home/hdc/CLionProjects/cPlus/cmake-build-debug/ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/example.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../lib/x64"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Work/cPlus/ffmpegLeaning/src/success.cpp" "/cygdrive/c/Work/cPlus/cmake-build-debug/ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o"
+  "/home/hdc/CLionProjects/cPlus/ffmpegLeaning/src/success.cpp" "/home/hdc/CLionProjects/cPlus/cmake-build-debug/ffmpegLeaning/CMakeFiles/ffmpegLeaning.dir/src/success.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

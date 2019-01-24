@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/c/Work/cPlus/ffmpegLeaning
+# Install script for directory: /home/hdc/CLionProjects/cPlus/ffmpegLeaning
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,20 +27,36 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/hdc/CLionProjects/cPlus/bin/ffmpegLeaning" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/hdc/CLionProjects/cPlus/bin/ffmpegLeaning")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/hdc/CLionProjects/cPlus/bin/ffmpegLeaning"
+         RPATH "")
+  endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/cygdrive/c/Work/cPlus/bin/ffmpegLeaning.exe")
+   "/home/hdc/CLionProjects/cPlus/bin/ffmpegLeaning")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/cygdrive/c/Work/cPlus/bin" TYPE EXECUTABLE FILES "/cygdrive/c/Work/cPlus/cmake-build-debug/bin/ffmpegLeaning.exe")
-  if(EXISTS "$ENV{DESTDIR}/cygdrive/c/Work/cPlus/bin/ffmpegLeaning.exe" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/cygdrive/c/Work/cPlus/bin/ffmpegLeaning.exe")
+file(INSTALL DESTINATION "/home/hdc/CLionProjects/cPlus/bin" TYPE EXECUTABLE FILES "/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin/ffmpegLeaning")
+  if(EXISTS "$ENV{DESTDIR}/home/hdc/CLionProjects/cPlus/bin/ffmpegLeaning" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/hdc/CLionProjects/cPlus/bin/ffmpegLeaning")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip.exe" "$ENV{DESTDIR}/cygdrive/c/Work/cPlus/bin/ffmpegLeaning.exe")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/hdc/CLionProjects/cPlus/bin/ffmpegLeaning")
     endif()
   endif()
 endif()
