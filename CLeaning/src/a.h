@@ -5,6 +5,11 @@
 #ifndef CPLUS_A_H
 #define CPLUS_A_H
 
+MW_UCHAR * MW_Memset( MW_UCHAR *vDest, MW_INT vValue, MW_UINT vLength )
+{
+    return (MW_UCHAR *)memset( vDest, vValue, vLength );
+}
+
 #define MW_ULONG unsigned long
 #define MW_LONG long
 
