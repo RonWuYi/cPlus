@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "a.h"
 
-typedef struct _HostDeviceDataPrivateData
-{
-    uc_uint32
-};
+//typedef struct _HostDeviceDataPrivateData
+//{
+//    uc_uint32
+//};
 
 int main(){
     FILE* pFile;

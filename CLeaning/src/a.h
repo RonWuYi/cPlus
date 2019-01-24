@@ -536,7 +536,7 @@ typedef unsigned int    uc_uintptr; /**< Unsigned int of the same size as a poin
 #define UC_PRE_ENABLEMENT_PERSONALIZED_DATA_MAXSIZE (1024)
 #define UC_IFCP_APP_CONTROL_FEATURE_BITMAP_SIZE (4)
 #define UC_IFCP_CONTENT_USAGE_RULE_SIZE   (4)
-
+#define uc_bool int
 typedef struct _HostDeviceDataPersonalizedData
 {
     uc_uint32 vLength;
@@ -570,70 +570,70 @@ typedef struct _HostDeviceData
     uc_bool  vValidCSSN;
 #endif
 }HostDeviceData;
-
-extern "C" uc_result UT_GetDeviceData(HostDeviceData *vHostDeviceData)
-{
-    uc_result vResult = UC_ERROR_SUCCESS;
-    FILE *vFile = NULL;
-
-    memset((MW_UCHAR *)vHostDeviceData, 0x0, sizeof(HostDeviceData));
-
-    if(UC_ERROR_SUCCESS == vResult)
-    {
-        CString vDeviceFileName;
-        LPCTSTR vDeviceFileNameStr = NULL;
-
-        vDeviceFileName.Format("%s%s", UT_GetExePath(), UT_DEVICE_FILE_NAME);
-        vDeviceFileNameStr = vDeviceFileName;
-        
-        /*Try to open device file.*/
-        if( 0 != fopen_s( &vFile, (const char *)vDeviceFileNameStr, "rb" )) 
-        {
-            /*Failed to open a file.*/
-            vResult = UC_ERROR_MISSING_DATA;
-            vFile = NULL;
-        }
-    }
-    if(UC_ERROR_SUCCESS == vResult)
-    {
-        size_t vBytesRead = fread( vHostDeviceData, 1, sizeof(HostDeviceData), vFile );
-        if(sizeof(HostDeviceData) != vBytesRead)
-        {
-            vResult = UC_ERROR_MISSING_DATA;
-        }
-    }
-
-    if(vFile)
-        fclose(vFile);
-
-    return vResult;
-}
-
-void UT_SetExePath()
-{
-    TCHAR vPath[MAX_PATH];
-    memset(vPath, 0x0, sizeof(vPath));
-    GetModuleFileName( NULL, vPath, MAX_PATH );
-    int i = 0, j = 0;
-    while( vPath[i]!=0 )
-    {
-        if( vPath[i]=='\\' )
-            j = i;
-        i++;
-    }
-    vPath[j+1] = '\0';
-    gUtExePath.Format( "%s", vPath );
-}
-
-/*Get current exe path.*/
-CString UT_GetExePath()
-{
-    if(gUtExePath.IsEmpty())
-    {
-        UT_SetExePath();
-        UT_SetDeviceDefault();
-    }
-    return gUtExePath;
-}
+//
+//extern "C" uc_result UT_GetDeviceData(HostDeviceData *vHostDeviceData)
+//{
+//    uc_result vResult = UC_ERROR_SUCCESS;
+//    FILE *vFile = NULL;
+//
+//    memset((MW_UCHAR *)vHostDeviceData, 0x0, sizeof(HostDeviceData));
+//
+//    if(UC_ERROR_SUCCESS == vResult)
+//    {
+//        CString vDeviceFileName;
+//        LPCTSTR vDeviceFileNameStr = NULL;
+//
+//        vDeviceFileName.Format("%s%s", UT_GetExePath(), UT_DEVICE_FILE_NAME);
+//        vDeviceFileNameStr = vDeviceFileName;
+//
+//        /*Try to open device file.*/
+//        if( 0 != fopen_s( &vFile, (const char *)vDeviceFileNameStr, "rb" ))
+//        {
+//            /*Failed to open a file.*/
+//            vResult = UC_ERROR_MISSING_DATA;
+//            vFile = NULL;
+//        }
+//    }
+//    if(UC_ERROR_SUCCESS == vResult)
+//    {
+//        size_t vBytesRead = fread( vHostDeviceData, 1, sizeof(HostDeviceData), vFile );
+//        if(sizeof(HostDeviceData) != vBytesRead)
+//        {
+//            vResult = UC_ERROR_MISSING_DATA;
+//        }
+//    }
+//
+//    if(vFile)
+//        fclose(vFile);
+//
+//    return vResult;
+//}
+//
+//void UT_SetExePath()
+//{
+//    TCHAR vPath[MAX_PATH];
+//    memset(vPath, 0x0, sizeof(vPath));
+//    GetModuleFileName( NULL, vPath, MAX_PATH );
+//    int i = 0, j = 0;
+//    while( vPath[i]!=0 )
+//    {
+//        if( vPath[i]=='\\' )
+//            j = i;
+//        i++;
+//    }
+//    vPath[j+1] = '\0';
+//    gUtExePath.Format( "%s", vPath );
+//}
+//
+///*Get current exe path.*/
+//CString UT_GetExePath()
+//{
+//    if(gUtExePath.IsEmpty())
+//    {
+//        UT_SetExePath();
+//        UT_SetDeviceDefault();
+//    }
+//    return gUtExePath;
+//}
 
 #endif //CPLUS_A_H
