@@ -5,6 +5,20 @@
 #ifndef CPLUS_A_H
 #define CPLUS_A_H
 
+#define MW_ULONG unsigned long
+#define MW_LONG long
+
+#define MW_UINT unsigned int
+#define MW_INT int
+
+#define MW_USHORT unsigned short
+#define MW_SHORT short
+
+#define MW_UCHAR unsigned char
+#define MW_CHAR char
+
+#define MW_UINT64 unsigned __int64
+
 typedef enum {
     /** (0x00000000) The operation was successful. */
     UC_ERROR_SUCCESS                        = 0x00000000,
