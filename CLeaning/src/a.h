@@ -635,5 +635,10 @@ typedef struct _HostDeviceData
 //    }
 //    return gUtExePath;
 //}
+uc_result GetDeviceData(HostDeviceData *vHostDeviceData){
+    uc_result vResult = UC_ERROR_SUCCESS;
+    FILE *vFile = NULL;
 
+    MW_MEMSET
+}
 #endif //CPLUS_A_H

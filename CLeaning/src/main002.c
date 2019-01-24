@@ -37,6 +37,10 @@ int main(){
         if ((i+1)%16 == 0)
             printf("\n");
     }
+
+    HostDeviceData vHostDeviceData;
+    uc_result vResult = GetDeviceData(&vHostDeviceData);
+
     fclose(pFile);
     free(buffer);
     return 0;
