@@ -234,7 +234,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/src/main002.c">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/src/main008.cpp">
 			<Option target="CLeaning"/>
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/MathFunctions/MakeTable.cpp">

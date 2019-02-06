@@ -658,6 +658,11 @@ uc_result GetDeviceData(HostDeviceData *vHostDeviceData){
     uc_result vResult = UC_ERROR_SUCCESS;
     FILE *vFile = NULL;
 
-    MW_MEMSET
+    MW_Memset((MW_UCHAR *)vHostDeviceData, 0x0, sizeof(HostDeviceData));
+
+    if (UC_ERROR_SUCCESS==vResult)
+    {
+        CString v
+    }
 }
 #endif //CPLUS_A_H

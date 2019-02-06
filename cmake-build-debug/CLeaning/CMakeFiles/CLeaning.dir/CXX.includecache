@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Work/cPlus/CLeaning/src/readf.cpp
-vector
--
-string
--
+/home/hdc/CLionProjects/cPlus/CLeaning/src/main005.cpp
 iostream
 -
 fstream
 -
-algorithm
+bitset
+-
+math.h
+-
+iomanip
+-
+stdio.h
+-
+string.h
 -
 

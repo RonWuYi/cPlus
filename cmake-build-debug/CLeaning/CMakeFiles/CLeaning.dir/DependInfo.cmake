@@ -1,15 +1,15 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/home/hdc/CLionProjects/cPlus/CLeaning/src/main002.c" "/home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning/CMakeFiles/CLeaning.dir/src/main002.c.o"
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/hdc/CLionProjects/cPlus/CLeaning/src/main008.cpp" "/home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../MathFunctions"
   "../include"
   "../Header"

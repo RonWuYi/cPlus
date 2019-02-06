@@ -171,32 +171,32 @@ CLeaning/fast:
 	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/build
 .PHONY : CLeaning/fast
 
-src/main002.o: src/main002.c.o
+src/main008.o: src/main008.cpp.o
 
-.PHONY : src/main002.o
+.PHONY : src/main008.o
 
 # target to build an object file
-src/main002.c.o:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main002.c.o
-.PHONY : src/main002.c.o
+src/main008.cpp.o:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.o
+.PHONY : src/main008.cpp.o
 
-src/main002.i: src/main002.c.i
+src/main008.i: src/main008.cpp.i
 
-.PHONY : src/main002.i
+.PHONY : src/main008.i
 
 # target to preprocess a source file
-src/main002.c.i:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main002.c.i
-.PHONY : src/main002.c.i
+src/main008.cpp.i:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.i
+.PHONY : src/main008.cpp.i
 
-src/main002.s: src/main002.c.s
+src/main008.s: src/main008.cpp.s
 
-.PHONY : src/main002.s
+.PHONY : src/main008.s
 
 # target to generate assembly for a file
-src/main002.c.s:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main002.c.s
-.PHONY : src/main002.c.s
+src/main008.cpp.s:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.s
+.PHONY : src/main008.cpp.s
 
 # Help Target
 help:
@@ -211,9 +211,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CLeaning"
 	@echo "... install"
-	@echo "... src/main002.o"
-	@echo "... src/main002.i"
-	@echo "... src/main002.s"
+	@echo "... src/main008.o"
+	@echo "... src/main008.i"
+	@echo "... src/main008.s"
 .PHONY : help
 
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "a.h"
+//#include "a.h"
 
 //typedef struct _HostDeviceDataPrivateData
 //{
@@ -13,7 +13,11 @@ int main(){
     char* buffer;
     size_t result;
 
-    pFile = fopen( "/home/hdc/CLionProjects/cPlus/CLeaning/src/DeviceData.bin", "rb" );
+    pFile = fopen( "/home/hdc/PycharmProjects/pyautogui/testfiles/PersistentStorage.bin", "rb" );
+
+    //pFile = fopen( "/home/hdc/PycharmProjects/pyautogui/testfiles/C0000001/PersistentStorage.bin", "rb" );
+
+
     if (pFile==NULL){
         fputs("File error", stderr);
         exit(1);
@@ -33,13 +37,16 @@ int main(){
     }
 
     for (int i = 0; i < sizeof(buffer); ++i) {
-        printf("%02x", &buffer[i]);
-        if ((i+1)%16 == 0)
-            printf("\n");
+        if (i > 3){
+            printf("%02x", buffer[i]);
+        }
+
+//        if ((i+1)%16 == 0)
+//            printf("\n");
     }
 
-    HostDeviceData vHostDeviceData;
-    uc_result vResult = GetDeviceData(&vHostDeviceData);
+//    HostDeviceData vHostDeviceData;
+//    uc_result vResult = GetDeviceData(&vHostDeviceData);
 
     fclose(pFile);
     free(buffer);

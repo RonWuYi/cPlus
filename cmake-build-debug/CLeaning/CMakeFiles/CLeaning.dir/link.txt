@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/CLeaning.dir/src/main002.c.o  -o ../bin/CLeaning 
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g   CMakeFiles/CLeaning.dir/src/main008.cpp.o  -o ../bin/CLeaning 
