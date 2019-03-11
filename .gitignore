@@ -33,3 +33,7 @@
 
 # Others
 .idea/
+cmake-build-debug/CMakeFiles/CMakeError.log
+cmake-build-debug/googletest-build/
+cmake-build-debug/googletest-download/
+cmake-build-debug/googletest-src/
