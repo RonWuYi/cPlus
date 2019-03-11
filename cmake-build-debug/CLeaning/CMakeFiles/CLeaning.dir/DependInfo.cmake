@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hdc/CLionProjects/cPlus/CLeaning/src/main008.cpp" "/home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.o"
+  "/home/hdc/CLionProjects/cPlus/CLeaning/src/main007.cpp" "/home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.o"
+  "/home/hdc/CLionProjects/cPlus/CLeaning/src/main007_ut.cpp" "/home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -14,10 +15,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "../Header"
   "../lib/x64"
+  "googletest-src/googletest/include"
+  "googletest-src/googletest"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -57,30 +57,47 @@ include CLeaning/CMakeFiles/CLeaning.dir/progress.make
 # Include the compile flags for this target's objects.
 include CLeaning/CMakeFiles/CLeaning.dir/flags.make
 
-CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.o: CLeaning/CMakeFiles/CLeaning.dir/flags.make
-CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.o: ../CLeaning/src/main008.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.o"
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CLeaning.dir/src/main008.cpp.o -c /home/hdc/CLionProjects/cPlus/CLeaning/src/main008.cpp
+CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.o: CLeaning/CMakeFiles/CLeaning.dir/flags.make
+CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.o: ../CLeaning/src/main007.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.o"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CLeaning.dir/src/main007.cpp.o -c /home/hdc/CLionProjects/cPlus/CLeaning/src/main007.cpp
 
-CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CLeaning.dir/src/main008.cpp.i"
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/CLionProjects/cPlus/CLeaning/src/main008.cpp > CMakeFiles/CLeaning.dir/src/main008.cpp.i
+CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CLeaning.dir/src/main007.cpp.i"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/CLionProjects/cPlus/CLeaning/src/main007.cpp > CMakeFiles/CLeaning.dir/src/main007.cpp.i
 
-CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CLeaning.dir/src/main008.cpp.s"
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/CLionProjects/cPlus/CLeaning/src/main008.cpp -o CMakeFiles/CLeaning.dir/src/main008.cpp.s
+CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CLeaning.dir/src/main007.cpp.s"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/CLionProjects/cPlus/CLeaning/src/main007.cpp -o CMakeFiles/CLeaning.dir/src/main007.cpp.s
+
+CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o: CLeaning/CMakeFiles/CLeaning.dir/flags.make
+CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o: ../CLeaning/src/main007_ut.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o -c /home/hdc/CLionProjects/cPlus/CLeaning/src/main007_ut.cpp
+
+CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CLeaning.dir/src/main007_ut.cpp.i"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/CLionProjects/cPlus/CLeaning/src/main007_ut.cpp > CMakeFiles/CLeaning.dir/src/main007_ut.cpp.i
+
+CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CLeaning.dir/src/main007_ut.cpp.s"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/CLionProjects/cPlus/CLeaning/src/main007_ut.cpp -o CMakeFiles/CLeaning.dir/src/main007_ut.cpp.s
 
 # Object files for target CLeaning
 CLeaning_OBJECTS = \
-"CMakeFiles/CLeaning.dir/src/main008.cpp.o"
+"CMakeFiles/CLeaning.dir/src/main007.cpp.o" \
+"CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o"
 
 # External object files for target CLeaning
 CLeaning_EXTERNAL_OBJECTS =
 
-bin/CLeaning: CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.o
+bin/CLeaning: CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.o
+bin/CLeaning: CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o
 bin/CLeaning: CLeaning/CMakeFiles/CLeaning.dir/build.make
+bin/CLeaning: lib/libgtest_maind.a
+bin/CLeaning: lib/libgtestd.a
 bin/CLeaning: CLeaning/CMakeFiles/CLeaning.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/CLeaning"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/CLeaning"
 	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CLeaning.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

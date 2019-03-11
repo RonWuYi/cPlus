@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CLeaning.dir/src/main008.cpp.o"
+  "CMakeFiles/CLeaning.dir/src/main007.cpp.o"
+  "CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o"
   "../bin/CLeaning.pdb"
   "../bin/CLeaning"
 )

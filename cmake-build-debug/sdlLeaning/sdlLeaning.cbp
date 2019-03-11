@@ -5,7 +5,7 @@
 		<Option title="sdlLeaning"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\MathFunctions\;CMake Files\sdlLeaning\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\MathFunctions\;CMake Files\sdlLeaning\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\googletest-src\;CMake Files\cmake-build-debug\googletest-src\googlemock\;CMake Files\cmake-build-debug\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug\googletest-src\googletest\;CMake Files\cmake-build-debug\googletest-src\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning"/>
@@ -28,6 +28,8 @@
 					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -55,6 +57,8 @@
 					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -72,10 +76,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/src/sdlEx001.cpp">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/src/normal001.cpp">
 			<Option target="sdlLeaning"/>
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/CMakeLists.txt.in">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/CMakeLists.txt">
@@ -86,6 +93,33 @@
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\sdlLeaning\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\cmake\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

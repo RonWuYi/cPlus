@@ -4,7 +4,8 @@
 
 #ifndef CPLUS_HEADER_H
 #define CPLUS_HEADER_H
-int get_line(char line[], int maxline);
-void reverse(char s[]);
+int Factorial(int n);
+
+bool IsPrime(int n);
 
 #endif //CPLUS_HEADER_H

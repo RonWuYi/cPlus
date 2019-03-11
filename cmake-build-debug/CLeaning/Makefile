@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,19 +59,19 @@ CMAKE_BINARY_DIR = /home/hdc/CLionProjects/cPlus/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -92,19 +92,19 @@ list_install_components/fast: list_install_components
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -115,13 +115,13 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # The main all target
@@ -171,32 +171,59 @@ CLeaning/fast:
 	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/build
 .PHONY : CLeaning/fast
 
-src/main008.o: src/main008.cpp.o
+src/main007.o: src/main007.cpp.o
 
-.PHONY : src/main008.o
+.PHONY : src/main007.o
 
 # target to build an object file
-src/main008.cpp.o:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.o
-.PHONY : src/main008.cpp.o
+src/main007.cpp.o:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.o
+.PHONY : src/main007.cpp.o
 
-src/main008.i: src/main008.cpp.i
+src/main007.i: src/main007.cpp.i
 
-.PHONY : src/main008.i
+.PHONY : src/main007.i
 
 # target to preprocess a source file
-src/main008.cpp.i:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.i
-.PHONY : src/main008.cpp.i
+src/main007.cpp.i:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.i
+.PHONY : src/main007.cpp.i
 
-src/main008.s: src/main008.cpp.s
+src/main007.s: src/main007.cpp.s
 
-.PHONY : src/main008.s
+.PHONY : src/main007.s
 
 # target to generate assembly for a file
-src/main008.cpp.s:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main008.cpp.s
-.PHONY : src/main008.cpp.s
+src/main007.cpp.s:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.s
+.PHONY : src/main007.cpp.s
+
+src/main007_ut.o: src/main007_ut.cpp.o
+
+.PHONY : src/main007_ut.o
+
+# target to build an object file
+src/main007_ut.cpp.o:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o
+.PHONY : src/main007_ut.cpp.o
+
+src/main007_ut.i: src/main007_ut.cpp.i
+
+.PHONY : src/main007_ut.i
+
+# target to preprocess a source file
+src/main007_ut.cpp.i:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.i
+.PHONY : src/main007_ut.cpp.i
+
+src/main007_ut.s: src/main007_ut.cpp.s
+
+.PHONY : src/main007_ut.s
+
+# target to generate assembly for a file
+src/main007_ut.cpp.s:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.s
+.PHONY : src/main007_ut.cpp.s
 
 # Help Target
 help:
@@ -211,9 +238,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CLeaning"
 	@echo "... install"
-	@echo "... src/main008.o"
-	@echo "... src/main008.i"
-	@echo "... src/main008.s"
+	@echo "... src/main007.o"
+	@echo "... src/main007.i"
+	@echo "... src/main007.s"
+	@echo "... src/main007_ut.o"
+	@echo "... src/main007_ut.i"
+	@echo "... src/main007_ut.s"
 .PHONY : help
 
 

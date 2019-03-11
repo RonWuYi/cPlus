@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -57,28 +57,30 @@ include sdlLeaning/CMakeFiles/sdlLeaning.dir/progress.make
 # Include the compile flags for this target's objects.
 include sdlLeaning/CMakeFiles/sdlLeaning.dir/flags.make
 
-sdlLeaning/CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.o: sdlLeaning/CMakeFiles/sdlLeaning.dir/flags.make
-sdlLeaning/CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.o: ../sdlLeaning/src/sdlEx001.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sdlLeaning/CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.o"
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.o -c /home/hdc/CLionProjects/cPlus/sdlLeaning/src/sdlEx001.cpp
+sdlLeaning/CMakeFiles/sdlLeaning.dir/src/normal001.cpp.o: sdlLeaning/CMakeFiles/sdlLeaning.dir/flags.make
+sdlLeaning/CMakeFiles/sdlLeaning.dir/src/normal001.cpp.o: ../sdlLeaning/src/normal001.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sdlLeaning/CMakeFiles/sdlLeaning.dir/src/normal001.cpp.o"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdlLeaning.dir/src/normal001.cpp.o -c /home/hdc/CLionProjects/cPlus/sdlLeaning/src/normal001.cpp
 
-sdlLeaning/CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.i"
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/CLionProjects/cPlus/sdlLeaning/src/sdlEx001.cpp > CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.i
+sdlLeaning/CMakeFiles/sdlLeaning.dir/src/normal001.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdlLeaning.dir/src/normal001.cpp.i"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/CLionProjects/cPlus/sdlLeaning/src/normal001.cpp > CMakeFiles/sdlLeaning.dir/src/normal001.cpp.i
 
-sdlLeaning/CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.s"
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/CLionProjects/cPlus/sdlLeaning/src/sdlEx001.cpp -o CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.s
+sdlLeaning/CMakeFiles/sdlLeaning.dir/src/normal001.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdlLeaning.dir/src/normal001.cpp.s"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/CLionProjects/cPlus/sdlLeaning/src/normal001.cpp -o CMakeFiles/sdlLeaning.dir/src/normal001.cpp.s
 
 # Object files for target sdlLeaning
 sdlLeaning_OBJECTS = \
-"CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.o"
+"CMakeFiles/sdlLeaning.dir/src/normal001.cpp.o"
 
 # External object files for target sdlLeaning
 sdlLeaning_EXTERNAL_OBJECTS =
 
-bin/sdlLeaning: sdlLeaning/CMakeFiles/sdlLeaning.dir/src/sdlEx001.cpp.o
+bin/sdlLeaning: sdlLeaning/CMakeFiles/sdlLeaning.dir/src/normal001.cpp.o
 bin/sdlLeaning: sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make
+bin/sdlLeaning: lib/libgtest_maind.a
+bin/sdlLeaning: lib/libgtestd.a
 bin/sdlLeaning: sdlLeaning/CMakeFiles/sdlLeaning.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/sdlLeaning"
 	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sdlLeaning.dir/link.txt --verbose=$(VERBOSE)
