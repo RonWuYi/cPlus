@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g   CMakeFiles/rest.dir/1.cpp.o  -o ../bin/rest 
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g   CMakeFiles/rest.dir/src/3.cpp.o CMakeFiles/rest.dir/src/derived.cpp.o CMakeFiles/rest.dir/src/main1.cpp.o  -o ../bin/rest 

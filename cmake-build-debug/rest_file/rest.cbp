@@ -5,7 +5,7 @@
 		<Option title="rest"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\MathFunctions\;CMake Files\ffmpegLeaning\;CMake Files\rest_file\;CMake Files\sdlLeaning\;CMake Files\cmakeLeaning\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\googletest-src\;CMake Files\cmake-build-debug\googletest-src\googlemock\;CMake Files\cmake-build-debug\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug\googletest-src\googletest\;CMake Files\cmake-build-debug\googletest-src\googletest\cmake\;CMake Files\MathFunctions\;CMake Files\rest_file\;CMake Files\sdlLeaning\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file"/>
@@ -72,32 +72,65 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/1.cpp">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/3.cpp">
+			<Option target="rest"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/derived.cpp">
+			<Option target="rest"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/derived.hpp">
+			<Option target="rest"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/logger.hpp">
+			<Option target="rest"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/main1.cpp">
 			<Option target="rest"/>
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/CMakeLists.txt.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CLeaning\"/>
 		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\cmake\"/>
+		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/MathFunctions/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\MathFunctions\"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/ffmpegLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\ffmpegLeaning\"/>
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\rest_file\"/>
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\sdlLeaning\"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/cmakeLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/cmakeLeaning/Config.h.in">
-			<Option virtualFolder="CMake Files\cmakeLeaning\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

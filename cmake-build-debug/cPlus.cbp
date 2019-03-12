@@ -5,7 +5,7 @@
 		<Option title="cPlus"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\MathFunctions\;CMake Files\sdlLeaning\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\googletest-src\;CMake Files\cmake-build-debug\googletest-src\googlemock\;CMake Files\cmake-build-debug\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug\googletest-src\googletest\;CMake Files\cmake-build-debug\googletest-src\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\googletest-src\;CMake Files\cmake-build-debug\googletest-src\googlemock\;CMake Files\cmake-build-debug\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug\googletest-src\googletest\;CMake Files\cmake-build-debug\googletest-src\googletest\cmake\;CMake Files\MathFunctions\;CMake Files\rest_file\;CMake Files\sdlLeaning\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug"/>
@@ -75,6 +75,214 @@
 					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MathFunctions">
@@ -183,6 +391,60 @@
 					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="rest">
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin/rest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file/Makefile&quot;  VERBOSE=1 rest"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rest/fast">
+				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin/rest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file/Makefile&quot;  VERBOSE=1 rest/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="sdlLeaning">
 				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin/sdlLeaning" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/bin"/>
@@ -241,246 +503,6 @@
 					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="gmock_main">
-				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gmock_main/fast">
-				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gmock">
-				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gmock/fast">
-				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googlemock"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest_main">
-				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest_main/fast">
-				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest">
-				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest/fast">
-				<Option output="/home/hdc/CLionProjects/cPlus/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/hdc/CLionProjects/cPlus/MathFunctions"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-build/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/src/header.h">
 			<Option target="CLeaning"/>
@@ -509,6 +531,21 @@
 		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/3.cpp">
+			<Option target="rest"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/derived.cpp">
+			<Option target="rest"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/derived.hpp">
+			<Option target="rest"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/logger.hpp">
+			<Option target="rest"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/main1.cpp">
+			<Option target="rest"/>
+		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/src/normal001.cpp">
 			<Option target="sdlLeaning"/>
 		</Unit>
@@ -520,12 +557,6 @@
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CLeaning\"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/MathFunctions/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\MathFunctions\"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\sdlLeaning\"/>
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\"/>
@@ -553,6 +584,15 @@
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/MathFunctions/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MathFunctions\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rest_file\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\sdlLeaning\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

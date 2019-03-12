@@ -41,6 +41,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/hdc/CLionProjects/cPlus/cmake-build-debug/MathFunctions/cmake_install.cmake")
   include("/home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning/cmake_install.cmake")
+  include("/home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file/cmake_install.cmake")
   include("/home/hdc/CLionProjects/cPlus/cmake-build-debug/sdlLeaning/cmake_install.cmake")
 
 endif()

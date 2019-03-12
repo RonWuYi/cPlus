@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/hdc/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/hdc/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -57,30 +57,60 @@ include rest_file/CMakeFiles/rest.dir/progress.make
 # Include the compile flags for this target's objects.
 include rest_file/CMakeFiles/rest.dir/flags.make
 
-rest_file/CMakeFiles/rest.dir/1.cpp.o: rest_file/CMakeFiles/rest.dir/flags.make
-rest_file/CMakeFiles/rest.dir/1.cpp.o: ../rest_file/1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rest_file/CMakeFiles/rest.dir/1.cpp.o"
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rest.dir/1.cpp.o -c /home/hdc/CLionProjects/cPlus/rest_file/1.cpp
+rest_file/CMakeFiles/rest.dir/src/3.cpp.o: rest_file/CMakeFiles/rest.dir/flags.make
+rest_file/CMakeFiles/rest.dir/src/3.cpp.o: ../rest_file/src/3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rest_file/CMakeFiles/rest.dir/src/3.cpp.o"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rest.dir/src/3.cpp.o -c /home/hdc/CLionProjects/cPlus/rest_file/src/3.cpp
 
-rest_file/CMakeFiles/rest.dir/1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rest.dir/1.cpp.i"
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/CLionProjects/cPlus/rest_file/1.cpp > CMakeFiles/rest.dir/1.cpp.i
+rest_file/CMakeFiles/rest.dir/src/3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rest.dir/src/3.cpp.i"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/CLionProjects/cPlus/rest_file/src/3.cpp > CMakeFiles/rest.dir/src/3.cpp.i
 
-rest_file/CMakeFiles/rest.dir/1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rest.dir/1.cpp.s"
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/CLionProjects/cPlus/rest_file/1.cpp -o CMakeFiles/rest.dir/1.cpp.s
+rest_file/CMakeFiles/rest.dir/src/3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rest.dir/src/3.cpp.s"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/CLionProjects/cPlus/rest_file/src/3.cpp -o CMakeFiles/rest.dir/src/3.cpp.s
+
+rest_file/CMakeFiles/rest.dir/src/derived.cpp.o: rest_file/CMakeFiles/rest.dir/flags.make
+rest_file/CMakeFiles/rest.dir/src/derived.cpp.o: ../rest_file/src/derived.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rest_file/CMakeFiles/rest.dir/src/derived.cpp.o"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rest.dir/src/derived.cpp.o -c /home/hdc/CLionProjects/cPlus/rest_file/src/derived.cpp
+
+rest_file/CMakeFiles/rest.dir/src/derived.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rest.dir/src/derived.cpp.i"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/CLionProjects/cPlus/rest_file/src/derived.cpp > CMakeFiles/rest.dir/src/derived.cpp.i
+
+rest_file/CMakeFiles/rest.dir/src/derived.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rest.dir/src/derived.cpp.s"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/CLionProjects/cPlus/rest_file/src/derived.cpp -o CMakeFiles/rest.dir/src/derived.cpp.s
+
+rest_file/CMakeFiles/rest.dir/src/main1.cpp.o: rest_file/CMakeFiles/rest.dir/flags.make
+rest_file/CMakeFiles/rest.dir/src/main1.cpp.o: ../rest_file/src/main1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object rest_file/CMakeFiles/rest.dir/src/main1.cpp.o"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rest.dir/src/main1.cpp.o -c /home/hdc/CLionProjects/cPlus/rest_file/src/main1.cpp
+
+rest_file/CMakeFiles/rest.dir/src/main1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rest.dir/src/main1.cpp.i"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/CLionProjects/cPlus/rest_file/src/main1.cpp > CMakeFiles/rest.dir/src/main1.cpp.i
+
+rest_file/CMakeFiles/rest.dir/src/main1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rest.dir/src/main1.cpp.s"
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/CLionProjects/cPlus/rest_file/src/main1.cpp -o CMakeFiles/rest.dir/src/main1.cpp.s
 
 # Object files for target rest
 rest_OBJECTS = \
-"CMakeFiles/rest.dir/1.cpp.o"
+"CMakeFiles/rest.dir/src/3.cpp.o" \
+"CMakeFiles/rest.dir/src/derived.cpp.o" \
+"CMakeFiles/rest.dir/src/main1.cpp.o"
 
 # External object files for target rest
 rest_EXTERNAL_OBJECTS =
 
-bin/rest: rest_file/CMakeFiles/rest.dir/1.cpp.o
+bin/rest: rest_file/CMakeFiles/rest.dir/src/3.cpp.o
+bin/rest: rest_file/CMakeFiles/rest.dir/src/derived.cpp.o
+bin/rest: rest_file/CMakeFiles/rest.dir/src/main1.cpp.o
 bin/rest: rest_file/CMakeFiles/rest.dir/build.make
 bin/rest: rest_file/CMakeFiles/rest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/rest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/rest"
 	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug/rest_file && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

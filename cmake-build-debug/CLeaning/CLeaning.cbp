@@ -5,7 +5,7 @@
 		<Option title="CLeaning"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\MathFunctions\;CMake Files\sdlLeaning\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\googletest-src\;CMake Files\cmake-build-debug\googletest-src\googlemock\;CMake Files\cmake-build-debug\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug\googletest-src\googletest\;CMake Files\cmake-build-debug\googletest-src\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CLeaning\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\googletest-src\;CMake Files\cmake-build-debug\googletest-src\googlemock\;CMake Files\cmake-build-debug\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug\googletest-src\googletest\;CMake Files\cmake-build-debug\googletest-src\googletest\cmake\;CMake Files\MathFunctions\;CMake Files\rest_file\;CMake Files\sdlLeaning\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/hdc/CLionProjects/cPlus/cmake-build-debug/CLeaning"/>
@@ -94,12 +94,6 @@
 		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CLeaning\"/>
 		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/MathFunctions/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\MathFunctions\"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\sdlLeaning\"/>
-		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\"/>
 		</Unit>
@@ -126,6 +120,15 @@
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/MathFunctions/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MathFunctions\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rest_file\"/>
+		</Unit>
+		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\sdlLeaning\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

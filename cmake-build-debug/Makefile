@@ -157,45 +157,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MathFunctions
-
-# Build rule for target.
-MathFunctions: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MathFunctions
-.PHONY : MathFunctions
-
-# fast build rule for target.
-MathFunctions/fast:
-	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
-.PHONY : MathFunctions/fast
-
-#=============================================================================
-# Target rules for targets named CLeaning
-
-# Build rule for target.
-CLeaning: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CLeaning
-.PHONY : CLeaning
-
-# fast build rule for target.
-CLeaning/fast:
-	$(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/build
-.PHONY : CLeaning/fast
-
-#=============================================================================
-# Target rules for targets named sdlLeaning
-
-# Build rule for target.
-sdlLeaning: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sdlLeaning
-.PHONY : sdlLeaning
-
-# fast build rule for target.
-sdlLeaning/fast:
-	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/build
-.PHONY : sdlLeaning/fast
-
-#=============================================================================
 # Target rules for targets named gmock_main
 
 # Build rule for target.
@@ -247,6 +208,58 @@ gtest/fast:
 	$(MAKE) -f googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/build.make googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+#=============================================================================
+# Target rules for targets named MathFunctions
+
+# Build rule for target.
+MathFunctions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MathFunctions
+.PHONY : MathFunctions
+
+# fast build rule for target.
+MathFunctions/fast:
+	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
+.PHONY : MathFunctions/fast
+
+#=============================================================================
+# Target rules for targets named CLeaning
+
+# Build rule for target.
+CLeaning: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CLeaning
+.PHONY : CLeaning
+
+# fast build rule for target.
+CLeaning/fast:
+	$(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/build
+.PHONY : CLeaning/fast
+
+#=============================================================================
+# Target rules for targets named rest
+
+# Build rule for target.
+rest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rest
+.PHONY : rest
+
+# fast build rule for target.
+rest/fast:
+	$(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/build
+.PHONY : rest/fast
+
+#=============================================================================
+# Target rules for targets named sdlLeaning
+
+# Build rule for target.
+sdlLeaning: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sdlLeaning
+.PHONY : sdlLeaning
+
+# fast build rule for target.
+sdlLeaning/fast:
+	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/build
+.PHONY : sdlLeaning/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,13 +272,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MathFunctions"
-	@echo "... CLeaning"
-	@echo "... sdlLeaning"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... MathFunctions"
+	@echo "... CLeaning"
+	@echo "... rest"
+	@echo "... sdlLeaning"
 .PHONY : help
 
 

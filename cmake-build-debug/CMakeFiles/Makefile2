@@ -65,173 +65,6 @@ CMAKE_SOURCE_DIR = /home/hdc/CLionProjects/cPlus
 CMAKE_BINARY_DIR = /home/hdc/CLionProjects/cPlus/cmake-build-debug
 
 #=============================================================================
-# Directory level rules for directory MathFunctions
-
-# Convenience name for "all" pass in the directory.
-MathFunctions/all: MathFunctions/CMakeFiles/MathFunctions.dir/all
-
-.PHONY : MathFunctions/all
-
-# Convenience name for "clean" pass in the directory.
-MathFunctions/clean: MathFunctions/CMakeFiles/MathFunctions.dir/clean
-
-.PHONY : MathFunctions/clean
-
-# Convenience name for "preinstall" pass in the directory.
-MathFunctions/preinstall:
-
-.PHONY : MathFunctions/preinstall
-
-#=============================================================================
-# Target rules for target MathFunctions/CMakeFiles/MathFunctions.dir
-
-# All Build rule for target.
-MathFunctions/CMakeFiles/MathFunctions.dir/all:
-	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/depend
-	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target MathFunctions"
-.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/all
-
-# Include target in all.
-all: MathFunctions/CMakeFiles/MathFunctions.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-MathFunctions/CMakeFiles/MathFunctions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 0
-.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/rule
-
-# Convenience name for target.
-MathFunctions: MathFunctions/CMakeFiles/MathFunctions.dir/rule
-
-.PHONY : MathFunctions
-
-# clean rule for target.
-MathFunctions/CMakeFiles/MathFunctions.dir/clean:
-	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/clean
-.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/clean
-
-# clean rule for target.
-clean: MathFunctions/CMakeFiles/MathFunctions.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory CLeaning
-
-# Convenience name for "all" pass in the directory.
-CLeaning/all: CLeaning/CMakeFiles/CLeaning.dir/all
-
-.PHONY : CLeaning/all
-
-# Convenience name for "clean" pass in the directory.
-CLeaning/clean: CLeaning/CMakeFiles/CLeaning.dir/clean
-
-.PHONY : CLeaning/clean
-
-# Convenience name for "preinstall" pass in the directory.
-CLeaning/preinstall:
-
-.PHONY : CLeaning/preinstall
-
-#=============================================================================
-# Target rules for target CLeaning/CMakeFiles/CLeaning.dir
-
-# All Build rule for target.
-CLeaning/CMakeFiles/CLeaning.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir/all
-CLeaning/CMakeFiles/CLeaning.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/all
-	$(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/depend
-	$(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target CLeaning"
-.PHONY : CLeaning/CMakeFiles/CLeaning.dir/all
-
-# Include target in all.
-all: CLeaning/CMakeFiles/CLeaning.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CLeaning/CMakeFiles/CLeaning.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CLeaning/CMakeFiles/CLeaning.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 0
-.PHONY : CLeaning/CMakeFiles/CLeaning.dir/rule
-
-# Convenience name for target.
-CLeaning: CLeaning/CMakeFiles/CLeaning.dir/rule
-
-.PHONY : CLeaning
-
-# clean rule for target.
-CLeaning/CMakeFiles/CLeaning.dir/clean:
-	$(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/clean
-.PHONY : CLeaning/CMakeFiles/CLeaning.dir/clean
-
-# clean rule for target.
-clean: CLeaning/CMakeFiles/CLeaning.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory sdlLeaning
-
-# Convenience name for "all" pass in the directory.
-sdlLeaning/all: sdlLeaning/CMakeFiles/sdlLeaning.dir/all
-
-.PHONY : sdlLeaning/all
-
-# Convenience name for "clean" pass in the directory.
-sdlLeaning/clean: sdlLeaning/CMakeFiles/sdlLeaning.dir/clean
-
-.PHONY : sdlLeaning/clean
-
-# Convenience name for "preinstall" pass in the directory.
-sdlLeaning/preinstall:
-
-.PHONY : sdlLeaning/preinstall
-
-#=============================================================================
-# Target rules for target sdlLeaning/CMakeFiles/sdlLeaning.dir
-
-# All Build rule for target.
-sdlLeaning/CMakeFiles/sdlLeaning.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir/all
-sdlLeaning/CMakeFiles/sdlLeaning.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/all
-	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/depend
-	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target sdlLeaning"
-.PHONY : sdlLeaning/CMakeFiles/sdlLeaning.dir/all
-
-# Include target in all.
-all: sdlLeaning/CMakeFiles/sdlLeaning.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-sdlLeaning/CMakeFiles/sdlLeaning.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 sdlLeaning/CMakeFiles/sdlLeaning.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 0
-.PHONY : sdlLeaning/CMakeFiles/sdlLeaning.dir/rule
-
-# Convenience name for target.
-sdlLeaning: sdlLeaning/CMakeFiles/sdlLeaning.dir/rule
-
-.PHONY : sdlLeaning
-
-# clean rule for target.
-sdlLeaning/CMakeFiles/sdlLeaning.dir/clean:
-	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/clean
-.PHONY : sdlLeaning/CMakeFiles/sdlLeaning.dir/clean
-
-# clean rule for target.
-clean: sdlLeaning/CMakeFiles/sdlLeaning.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Directory level rules for directory googletest-build
 
 # Convenience name for "all" pass in the directory.
@@ -417,6 +250,228 @@ googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/clean:
 
 # clean rule for target.
 clean: googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory MathFunctions
+
+# Convenience name for "all" pass in the directory.
+MathFunctions/all: MathFunctions/CMakeFiles/MathFunctions.dir/all
+
+.PHONY : MathFunctions/all
+
+# Convenience name for "clean" pass in the directory.
+MathFunctions/clean: MathFunctions/CMakeFiles/MathFunctions.dir/clean
+
+.PHONY : MathFunctions/clean
+
+# Convenience name for "preinstall" pass in the directory.
+MathFunctions/preinstall:
+
+.PHONY : MathFunctions/preinstall
+
+#=============================================================================
+# Target rules for target MathFunctions/CMakeFiles/MathFunctions.dir
+
+# All Build rule for target.
+MathFunctions/CMakeFiles/MathFunctions.dir/all:
+	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/depend
+	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target MathFunctions"
+.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/all
+
+# Include target in all.
+all: MathFunctions/CMakeFiles/MathFunctions.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+MathFunctions/CMakeFiles/MathFunctions.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 0
+.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/rule
+
+# Convenience name for target.
+MathFunctions: MathFunctions/CMakeFiles/MathFunctions.dir/rule
+
+.PHONY : MathFunctions
+
+# clean rule for target.
+MathFunctions/CMakeFiles/MathFunctions.dir/clean:
+	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/clean
+.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/clean
+
+# clean rule for target.
+clean: MathFunctions/CMakeFiles/MathFunctions.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory CLeaning
+
+# Convenience name for "all" pass in the directory.
+CLeaning/all: CLeaning/CMakeFiles/CLeaning.dir/all
+
+.PHONY : CLeaning/all
+
+# Convenience name for "clean" pass in the directory.
+CLeaning/clean: CLeaning/CMakeFiles/CLeaning.dir/clean
+
+.PHONY : CLeaning/clean
+
+# Convenience name for "preinstall" pass in the directory.
+CLeaning/preinstall:
+
+.PHONY : CLeaning/preinstall
+
+#=============================================================================
+# Target rules for target CLeaning/CMakeFiles/CLeaning.dir
+
+# All Build rule for target.
+CLeaning/CMakeFiles/CLeaning.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+CLeaning/CMakeFiles/CLeaning.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/depend
+	$(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target CLeaning"
+.PHONY : CLeaning/CMakeFiles/CLeaning.dir/all
+
+# Include target in all.
+all: CLeaning/CMakeFiles/CLeaning.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CLeaning/CMakeFiles/CLeaning.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CLeaning/CMakeFiles/CLeaning.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 0
+.PHONY : CLeaning/CMakeFiles/CLeaning.dir/rule
+
+# Convenience name for target.
+CLeaning: CLeaning/CMakeFiles/CLeaning.dir/rule
+
+.PHONY : CLeaning
+
+# clean rule for target.
+CLeaning/CMakeFiles/CLeaning.dir/clean:
+	$(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/clean
+.PHONY : CLeaning/CMakeFiles/CLeaning.dir/clean
+
+# clean rule for target.
+clean: CLeaning/CMakeFiles/CLeaning.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory rest_file
+
+# Convenience name for "all" pass in the directory.
+rest_file/all: rest_file/CMakeFiles/rest.dir/all
+
+.PHONY : rest_file/all
+
+# Convenience name for "clean" pass in the directory.
+rest_file/clean: rest_file/CMakeFiles/rest.dir/clean
+
+.PHONY : rest_file/clean
+
+# Convenience name for "preinstall" pass in the directory.
+rest_file/preinstall:
+
+.PHONY : rest_file/preinstall
+
+#=============================================================================
+# Target rules for target rest_file/CMakeFiles/rest.dir
+
+# All Build rule for target.
+rest_file/CMakeFiles/rest.dir/all:
+	$(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/depend
+	$(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18 "Built target rest"
+.PHONY : rest_file/CMakeFiles/rest.dir/all
+
+# Include target in all.
+all: rest_file/CMakeFiles/rest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+rest_file/CMakeFiles/rest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 rest_file/CMakeFiles/rest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 0
+.PHONY : rest_file/CMakeFiles/rest.dir/rule
+
+# Convenience name for target.
+rest: rest_file/CMakeFiles/rest.dir/rule
+
+.PHONY : rest
+
+# clean rule for target.
+rest_file/CMakeFiles/rest.dir/clean:
+	$(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/clean
+.PHONY : rest_file/CMakeFiles/rest.dir/clean
+
+# clean rule for target.
+clean: rest_file/CMakeFiles/rest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory sdlLeaning
+
+# Convenience name for "all" pass in the directory.
+sdlLeaning/all: sdlLeaning/CMakeFiles/sdlLeaning.dir/all
+
+.PHONY : sdlLeaning/all
+
+# Convenience name for "clean" pass in the directory.
+sdlLeaning/clean: sdlLeaning/CMakeFiles/sdlLeaning.dir/clean
+
+.PHONY : sdlLeaning/clean
+
+# Convenience name for "preinstall" pass in the directory.
+sdlLeaning/preinstall:
+
+.PHONY : sdlLeaning/preinstall
+
+#=============================================================================
+# Target rules for target sdlLeaning/CMakeFiles/sdlLeaning.dir
+
+# All Build rule for target.
+sdlLeaning/CMakeFiles/sdlLeaning.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+sdlLeaning/CMakeFiles/sdlLeaning.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/depend
+	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target sdlLeaning"
+.PHONY : sdlLeaning/CMakeFiles/sdlLeaning.dir/all
+
+# Include target in all.
+all: sdlLeaning/CMakeFiles/sdlLeaning.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+sdlLeaning/CMakeFiles/sdlLeaning.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 sdlLeaning/CMakeFiles/sdlLeaning.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 0
+.PHONY : sdlLeaning/CMakeFiles/sdlLeaning.dir/rule
+
+# Convenience name for target.
+sdlLeaning: sdlLeaning/CMakeFiles/sdlLeaning.dir/rule
+
+.PHONY : sdlLeaning
+
+# clean rule for target.
+sdlLeaning/CMakeFiles/sdlLeaning.dir/clean:
+	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/clean
+.PHONY : sdlLeaning/CMakeFiles/sdlLeaning.dir/clean
+
+# clean rule for target.
+clean: sdlLeaning/CMakeFiles/sdlLeaning.dir/clean
 
 .PHONY : clean
 

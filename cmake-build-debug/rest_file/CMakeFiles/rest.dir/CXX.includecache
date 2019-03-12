@@ -6,19 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../Header/res_path.h
-iostream
--
-string
--
-SDL.h
--
+/home/hdc/CLionProjects/cPlus/rest_file/src/base.hpp
 
-/home/hdc/CLionProjects/cPlus/rest_file/1.cpp
+/home/hdc/CLionProjects/cPlus/rest_file/src/derived.hpp
+base.hpp
+/home/hdc/CLionProjects/cPlus/rest_file/src/base.hpp
+
+/home/hdc/CLionProjects/cPlus/rest_file/src/main1.cpp
+derived.hpp
+/home/hdc/CLionProjects/cPlus/rest_file/src/derived.hpp
 iostream
 -
-SDL.h
--
-res_path.h
-/home/hdc/CLionProjects/cPlus/rest_file/res_path.h
 
