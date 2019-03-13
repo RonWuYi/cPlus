@@ -4,7 +4,7 @@ using namespace std;
 
 // Program which uses singleton class
 
-main()
+int main()
 {
    // Only one instance of the singleton class can be created
    sDerived::create(3,3);
@@ -14,4 +14,6 @@ main()
 
    sDerived::instance()->setDataY(7);
    cout << sDerived::instance()->getDataY() << endl;
+
+    return 0;
 }
