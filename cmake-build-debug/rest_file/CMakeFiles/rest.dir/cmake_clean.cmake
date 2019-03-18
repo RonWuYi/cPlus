@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rest.dir/src/3.cpp.o"
-  "CMakeFiles/rest.dir/src/derived.cpp.o"
-  "CMakeFiles/rest.dir/src/main1.cpp.o"
+  "CMakeFiles/rest.dir/src/myqueue_ut.cpp.o"
   "../bin/rest.pdb"
   "../bin/rest"
 )

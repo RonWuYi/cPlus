@@ -402,6 +402,8 @@
 					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -429,6 +431,8 @@
 					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
+					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -531,19 +535,10 @@
 		<Unit filename="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/3.cpp">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/myqueue.h">
 			<Option target="rest"/>
 		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/derived.cpp">
-			<Option target="rest"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/derived.hpp">
-			<Option target="rest"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/logger.hpp">
-			<Option target="rest"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/main1.cpp">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/rest_file/src/myqueue_ut.cpp">
 			<Option target="rest"/>
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/sdlLeaning/src/normal001.cpp">

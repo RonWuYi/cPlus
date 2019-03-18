@@ -386,10 +386,11 @@ rest_file/preinstall:
 # Target rules for target rest_file/CMakeFiles/rest.dir
 
 # All Build rule for target.
-rest_file/CMakeFiles/rest.dir/all:
+rest_file/CMakeFiles/rest.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+rest_file/CMakeFiles/rest.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/depend
 	$(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18 "Built target rest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target rest"
 .PHONY : rest_file/CMakeFiles/rest.dir/all
 
 # Include target in all.
@@ -399,7 +400,7 @@ all: rest_file/CMakeFiles/rest.dir/all
 
 # Build rule for subdir invocation for target.
 rest_file/CMakeFiles/rest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 rest_file/CMakeFiles/rest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles 0
 .PHONY : rest_file/CMakeFiles/rest.dir/rule
@@ -445,7 +446,7 @@ sdlLeaning/CMakeFiles/sdlLeaning.dir/all: googletest-build/googlemock/gtest/CMak
 sdlLeaning/CMakeFiles/sdlLeaning.dir/all: googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/depend
 	$(MAKE) -f sdlLeaning/CMakeFiles/sdlLeaning.dir/build.make sdlLeaning/CMakeFiles/sdlLeaning.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target sdlLeaning"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hdc/CLionProjects/cPlus/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target sdlLeaning"
 .PHONY : sdlLeaning/CMakeFiles/sdlLeaning.dir/all
 
 # Include target in all.

@@ -4,8 +4,10 @@
 
 #ifndef CPLUS_HEADER_H
 #define CPLUS_HEADER_H
-int Factorial(int n);
 
+//#include <CString>
+int Factorial(int n);
+//CString
 bool IsPrime(int n);
 
 #endif //CPLUS_HEADER_H

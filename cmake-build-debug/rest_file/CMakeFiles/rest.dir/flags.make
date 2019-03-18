@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c+
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hdc/CLionProjects/cPlus/MathFunctions -I/home/hdc/CLionProjects/cPlus/include -I/home/hdc/CLionProjects/cPlus/Header -I/home/hdc/CLionProjects/cPlus/lib/x64 
+CXX_INCLUDES = -I/home/hdc/CLionProjects/cPlus/MathFunctions -I/home/hdc/CLionProjects/cPlus/include -I/home/hdc/CLionProjects/cPlus/Header -I/home/hdc/CLionProjects/cPlus/lib/x64 -isystem /home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include -isystem /home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest 
 

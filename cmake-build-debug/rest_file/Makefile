@@ -171,86 +171,32 @@ rest/fast:
 	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/build
 .PHONY : rest/fast
 
-src/3.o: src/3.cpp.o
+src/myqueue_ut.o: src/myqueue_ut.cpp.o
 
-.PHONY : src/3.o
-
-# target to build an object file
-src/3.cpp.o:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/3.cpp.o
-.PHONY : src/3.cpp.o
-
-src/3.i: src/3.cpp.i
-
-.PHONY : src/3.i
-
-# target to preprocess a source file
-src/3.cpp.i:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/3.cpp.i
-.PHONY : src/3.cpp.i
-
-src/3.s: src/3.cpp.s
-
-.PHONY : src/3.s
-
-# target to generate assembly for a file
-src/3.cpp.s:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/3.cpp.s
-.PHONY : src/3.cpp.s
-
-src/derived.o: src/derived.cpp.o
-
-.PHONY : src/derived.o
+.PHONY : src/myqueue_ut.o
 
 # target to build an object file
-src/derived.cpp.o:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/derived.cpp.o
-.PHONY : src/derived.cpp.o
+src/myqueue_ut.cpp.o:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/myqueue_ut.cpp.o
+.PHONY : src/myqueue_ut.cpp.o
 
-src/derived.i: src/derived.cpp.i
+src/myqueue_ut.i: src/myqueue_ut.cpp.i
 
-.PHONY : src/derived.i
-
-# target to preprocess a source file
-src/derived.cpp.i:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/derived.cpp.i
-.PHONY : src/derived.cpp.i
-
-src/derived.s: src/derived.cpp.s
-
-.PHONY : src/derived.s
-
-# target to generate assembly for a file
-src/derived.cpp.s:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/derived.cpp.s
-.PHONY : src/derived.cpp.s
-
-src/main1.o: src/main1.cpp.o
-
-.PHONY : src/main1.o
-
-# target to build an object file
-src/main1.cpp.o:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/main1.cpp.o
-.PHONY : src/main1.cpp.o
-
-src/main1.i: src/main1.cpp.i
-
-.PHONY : src/main1.i
+.PHONY : src/myqueue_ut.i
 
 # target to preprocess a source file
-src/main1.cpp.i:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/main1.cpp.i
-.PHONY : src/main1.cpp.i
+src/myqueue_ut.cpp.i:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/myqueue_ut.cpp.i
+.PHONY : src/myqueue_ut.cpp.i
 
-src/main1.s: src/main1.cpp.s
+src/myqueue_ut.s: src/myqueue_ut.cpp.s
 
-.PHONY : src/main1.s
+.PHONY : src/myqueue_ut.s
 
 # target to generate assembly for a file
-src/main1.cpp.s:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/main1.cpp.s
-.PHONY : src/main1.cpp.s
+src/myqueue_ut.cpp.s:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f rest_file/CMakeFiles/rest.dir/build.make rest_file/CMakeFiles/rest.dir/src/myqueue_ut.cpp.s
+.PHONY : src/myqueue_ut.cpp.s
 
 # Help Target
 help:
@@ -265,15 +211,9 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... install"
-	@echo "... src/3.o"
-	@echo "... src/3.i"
-	@echo "... src/3.s"
-	@echo "... src/derived.o"
-	@echo "... src/derived.i"
-	@echo "... src/derived.s"
-	@echo "... src/main1.o"
-	@echo "... src/main1.i"
-	@echo "... src/main1.s"
+	@echo "... src/myqueue_ut.o"
+	@echo "... src/myqueue_ut.i"
+	@echo "... src/myqueue_ut.s"
 .PHONY : help
 
 
