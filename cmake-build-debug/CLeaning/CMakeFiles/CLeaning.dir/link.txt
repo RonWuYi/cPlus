@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g   CMakeFiles/CLeaning.dir/src/main007.cpp.o CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o  -o ../bin/CLeaning ../lib/libgtest_maind.a ../lib/libgtestd.a -lpthread 
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g   CMakeFiles/CLeaning.dir/src/main009.cpp.o  -o ../bin/CLeaning 

@@ -171,59 +171,32 @@ CLeaning/fast:
 	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/build
 .PHONY : CLeaning/fast
 
-src/main007.o: src/main007.cpp.o
+src/main009.o: src/main009.cpp.o
 
-.PHONY : src/main007.o
-
-# target to build an object file
-src/main007.cpp.o:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.o
-.PHONY : src/main007.cpp.o
-
-src/main007.i: src/main007.cpp.i
-
-.PHONY : src/main007.i
-
-# target to preprocess a source file
-src/main007.cpp.i:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.i
-.PHONY : src/main007.cpp.i
-
-src/main007.s: src/main007.cpp.s
-
-.PHONY : src/main007.s
-
-# target to generate assembly for a file
-src/main007.cpp.s:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007.cpp.s
-.PHONY : src/main007.cpp.s
-
-src/main007_ut.o: src/main007_ut.cpp.o
-
-.PHONY : src/main007_ut.o
+.PHONY : src/main009.o
 
 # target to build an object file
-src/main007_ut.cpp.o:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.o
-.PHONY : src/main007_ut.cpp.o
+src/main009.cpp.o:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main009.cpp.o
+.PHONY : src/main009.cpp.o
 
-src/main007_ut.i: src/main007_ut.cpp.i
+src/main009.i: src/main009.cpp.i
 
-.PHONY : src/main007_ut.i
+.PHONY : src/main009.i
 
 # target to preprocess a source file
-src/main007_ut.cpp.i:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.i
-.PHONY : src/main007_ut.cpp.i
+src/main009.cpp.i:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main009.cpp.i
+.PHONY : src/main009.cpp.i
 
-src/main007_ut.s: src/main007_ut.cpp.s
+src/main009.s: src/main009.cpp.s
 
-.PHONY : src/main007_ut.s
+.PHONY : src/main009.s
 
 # target to generate assembly for a file
-src/main007_ut.cpp.s:
-	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main007_ut.cpp.s
-.PHONY : src/main007_ut.cpp.s
+src/main009.cpp.s:
+	cd /home/hdc/CLionProjects/cPlus/cmake-build-debug && $(MAKE) -f CLeaning/CMakeFiles/CLeaning.dir/build.make CLeaning/CMakeFiles/CLeaning.dir/src/main009.cpp.s
+.PHONY : src/main009.cpp.s
 
 # Help Target
 help:
@@ -238,12 +211,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CLeaning"
 	@echo "... install"
-	@echo "... src/main007.o"
-	@echo "... src/main007.i"
-	@echo "... src/main007.s"
-	@echo "... src/main007_ut.o"
-	@echo "... src/main007_ut.i"
-	@echo "... src/main007_ut.s"
+	@echo "... src/main009.o"
+	@echo "... src/main009.i"
+	@echo "... src/main009.s"
 .PHONY : help
 
 

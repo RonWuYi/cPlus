@@ -28,8 +28,6 @@
 					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -57,8 +55,6 @@
 					<Add directory="/home/hdc/CLionProjects/cPlus/include"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/Header"/>
 					<Add directory="/home/hdc/CLionProjects/cPlus/lib/x64"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest/include"/>
-					<Add directory="/home/hdc/CLionProjects/cPlus/cmake-build-debug/googletest-src/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -76,13 +72,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/src/header.h">
-			<Option target="CLeaning"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/src/main007.cpp">
-			<Option target="CLeaning"/>
-		</Unit>
-		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/src/main007_ut.cpp">
+		<Unit filename="/home/hdc/CLionProjects/cPlus/CLeaning/src/main009.cpp">
 			<Option target="CLeaning"/>
 		</Unit>
 		<Unit filename="/home/hdc/CLionProjects/cPlus/CMakeLists.txt">
