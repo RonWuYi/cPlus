@@ -1,0 +1,43 @@
+# vcpkg cmake on windows 
+cmake_minimum_required(VERSION 3.7)
+
+if(DEFINED ENV{VCPKG_ROOT} AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+  set(CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+      CACHE STRING "")
+else()
+  set(CMAKE_TOOLCHAIN_FILE "C:\\Work\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
+      CACHE STRING "")
+endif()
+
+project(SDL2Test)
+
+add_executable(SDL2Test Main.cpp)
+# target_link_libraries(SDL2Test ${SDL2_LIBRARIES})
+
+# To find and use catch
+find_package(SDL2 REQUIRED)
+
+# To find and use ffmpeg avcodec library
+find_path( AVCODEC_INCLUDE_DIR libavcodec/avcodec.h )
+find_library( AVCODEC_LIBRARY avcodec )
+find_library( FFMPEG_LIBRARY ffmpeg )
+find_path(TOTAL_INCLUDE_DIR zlib.h)
+target_include_directories( SDL2Test PRIVATE ${AVCODEC_INCLUDE_DIR} TOTAL_INCLUDE_DIR)
+
+# find_path(TOTAL_INCLUDE_DIR zlib.h)
+
+target_include_directories(SDL2Test PRIVATE .)
+target_link_libraries(SDL2Test SDL2::SDL2 SDL2::SDL2main ${AVCODEC_LIBRARY} ${FFMPEG_LIBRARY})
+target_compile_features(SDL2Test PUBLIC cxx_std_11)
+
+# To find and use ffmpeg avcodec library
+# find_path( AVCODEC_INCLUDE_DIR libavcodec/avcodec.h )
+# find_library( AVCODEC_LIBRARY avcodec )
+# target_include_directories( SDL2Test PRIVATE ${AVCODEC_INCLUDE_DIR} )
+# target_link_libraries( SDL2Test PRIVATE ${AVCODEC_LIBRARY})
+
+# find_path(CATCH_INCLUDE_DIR NAMES SDL.h PATH_SUFFIXES SDL2)
+# include_directories(${CATCH_INCLUDE_DIR})
+
+# find_package(SDL2 REQUIRED)
+# include_directories(${SDL2_INCLUDE_DIRS})
