@@ -1,8 +1,10 @@
 #pragma once
 #ifndef __HEADER__
 #define __HEADER__
-//#include <SDL2/SDL.h>
+
+#include <SDL2/SDL.h>
 #include <SDL2/SDL_thread.h>
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -19,6 +21,9 @@ extern "C"
 
 static int decoder_reorder_pts = -1;
 static AVPacket flush_pkt;
+
+const static int video_width = 640; 
+const static int video_height = 480;
 
 typedef struct MyAVPacketList {
     AVPacket pkt;
