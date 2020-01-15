@@ -131,7 +131,7 @@ int main(int argc, char* argv[]) {
 
     // Find the first video stream
     videoStream = -1;
-    for (i = 0; i < pFormatCtx->nb_streams; i++)
+    for (unsigned int i = 0; i < pFormatCtx->nb_streams; i++)
         if (pFormatCtx->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_VIDEO) {
             videoStream = i;
             break;
