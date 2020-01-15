@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
     AVPacket packet;
     int frameFinished;
     int numBytes;
-    uint8_t** buffer = NULL;
+    uint8_t* buffer = NULL;
     struct SwsContext* sws_ctx = NULL;
 
     if (argc < 2)
@@ -128,14 +128,18 @@ int main(int argc, char *argv[])
     }
 
     /*numBytes = avpicture_get_size(AV_PIX_FMT_RGB24, pCodecCtx->width, pCodecCtx->height);*/
-    int tmp_align = 32;
-    numBytes = av_image_get_buffer_size(AV_PIX_FMT_RGB24, pCodecCtx->width, pCodecCtx->height, tmp_align);
-    buffer = (uint8_t**)av_malloc(numBytes * sizeof(uint8_t));
+    int tmp_align = 1;
+    numBytes = av_image_get_buffer_size(AV_PIX_FMT_RGB24, pCodecCtx->width,
+                                        pCodecCtx->height, tmp_align);
+    buffer = (uint8_t*)av_malloc(numBytes * sizeof(uint8_t));
 
     //avpicture_fill((AVPicture*));
 
     // av_image_fill_arrays
-    av_image_fill_arrays(buffer, pFrameRGB->linesize, NULL, AV_PIX_FMT_RGB24, pCodecCtx->width, pCodecCtx->height, 1);
+    av_image_fill_arrays(pFrameRGB->data, pFrameRGB->linesize,
+                        buffer, AV_PIX_FMT_RGB24,
+                        pCodecCtx->width, pCodecCtx->height, 
+                        1);
 
     // initialize SWS context for software scaling
     sws_ctx = sws_getContext(pCodecCtx->width,
