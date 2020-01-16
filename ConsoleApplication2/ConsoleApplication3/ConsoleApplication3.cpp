@@ -1,63 +1,66 @@
-// ConsoleApplication3.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include "Header.h"
 
-  // constructing threads
-#include <iostream>       // std::cout
-#include <atomic>         // std::atomic
-#include <thread>         // std::thread
-#include <vector>         // std::vector
+#ifdef _WIN32
+#undef main
+#endif // _WIN32
 
-std::atomic<int> global_counter(0);
+//using namespace std;
+int main(int argc, char * args[]) {
+	//The window we'll be rendering to
+	SDL_Window* gWindow = NULL;
 
-void increase_global(int n) { for (int i = 0; i < n; ++i) ++global_counter; }
+	//The window renderer
+	SDL_Renderer* gRenderer = NULL;
 
-void increase_reference(std::atomic<int>& variable, int n) { for (int i = 0;   i < n; ++i) ++variable; }
+	//Scene textures
+	LTexture *gStreamingTexture = new LTexture;
 
-struct C : std::atomic<int> {
-    C() : std::atomic<int>(0) {}
-    void increase_member(int n) { for (int i = 0; i < n; ++i) fetch_add(1); }
-};
+	//Animation stream
+	DataStream *gDataStream = new DataStream;
 
-int main()
-{
-    std::vector<std::thread> threads;
+	if (!init(gWindow, gRenderer))
+	{
+		printf("Failed to initialize!\n");
+	}
+	else
+	{
+		if (!loadMedia(gStreamingTexture, gDataStream, gRenderer))
+		{
+			printf("Failed to load media!\n");
+		}
+		else
+		{
+			bool quit = false;
 
-    std::cout << "increase global counter with 10 threads...\n";
-    for (int i = 1; i <= 100; ++i)
-        threads.push_back(std::thread(increase_global, 90000000));
+			SDL_Event e;
 
-    std::cout << "increase counter (foo) with 10 threads using   reference...\n";
-    std::atomic<int> foo(0);
-    for (int i = 1; i <= 100; ++i)
-    {
-        threads.push_back(std::thread(increase_reference, std::ref(foo), 90000000));
-    }
+			while (!quit)
+			{
+				while (SDL_PollEvent(&e) != 0)
+				{
+					if (e.type==SDL_QUIT)
+					{
+						quit = true;
+					}
+				}
 
-    std::cout << "increase counter (bar) with 10 threads using member...\n";
-    C bar;
-    for (int i = 1; i <= 100; ++i)
-    {
-        threads.push_back(std::thread(&C::increase_member, std::ref(bar), 90000000));
-    }
+				SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
+				SDL_RenderClear(gRenderer);
 
-    std::cout << "synchronizing all threads...\n";
-    for (auto& th : threads) th.join();
+				gStreamingTexture->lockTexture();
+				gStreamingTexture->copyPixels(gDataStream->getBuffer());
+				gStreamingTexture->unlockTexture();
 
-    std::cout << "global_counter: " << global_counter << '\n';
-    std::cout << "foo: " << foo << '\n';
-    std::cout << "bar: " << bar << '\n';
+				gStreamingTexture->render(gRenderer, (SCREEN_WIDTH - gStreamingTexture->getWidth()) / 2,
+										(SCREEN_HEIGHT - gStreamingTexture->getHeight()) / 2, NULL, 0.0, NULL, SDL_FLIP_NONE);
 
-    return 0;
+				SDL_RenderPresent(gRenderer);
+			}
+
+		}
+	}
+	close(gStreamingTexture, gDataStream, gWindow, gRenderer);
+	delete gStreamingTexture;
+	delete gDataStream;
+	return 0;
 }
-
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
