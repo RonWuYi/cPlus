@@ -2,6 +2,11 @@
 //
 
 #include <iostream>
+#include <cassert>
+#include <math.h>
+
+// Use (void) to silent unused warnings.
+#define assertm(exp, msg) assert(((void)msg, exp))
 
 using namespace std;
 int main()
@@ -32,6 +37,18 @@ int main()
     //cout << &(x+1) << endl;
     cout << int(x) << endl;
 
+
+    assert(2 + 2 == 4);
+    std::cout << "Execution continues past the first assert\n";
+    //assertm(2 + 2 == 5, "There are five lights");
+    //std::cout << "Execution continues past the second assert\n";
+
+    double result, param = 10;
+    result = log(param);
+
+    double ref_param = 2.30259;
+    std::cout << result << std::endl;
+    assert((result, ref_param));
     return 0;
 }
 
