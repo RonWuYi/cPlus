@@ -23,7 +23,7 @@
   * simple media player based on the FFmpeg libraries
   */
 
-#include "config.h"
+//#include "config.h"
 #include <inttypes.h>
 #include <math.h>
 #include <limits.h>
@@ -1279,7 +1279,7 @@ static void video_audio_display(VideoState* s)
                 data[ch] = s->rdft_data + 2 * nb_freq * ch;
                 i = i_start + ch;
                 for (x = 0; x < 2 * nb_freq; x++) {
-                    double w = (x - nb_freq) * (1.0 / nb_freq);
+                    double w = static_cast(double)(x - nb_freq) * (1.0 / nb_freq);
                     data[ch][x] = s->sample_array[i] * (1.0 - w * w);
                     i += channels;
                     if (i >= SAMPLE_ARRAY_SIZE)

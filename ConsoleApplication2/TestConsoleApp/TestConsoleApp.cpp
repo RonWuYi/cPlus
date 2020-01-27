@@ -1,64 +1,64 @@
-// TestConsoleApp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+#include <vector>
 #include <iostream>
-#include <cassert>
-#include <math.h>
 
-// Use (void) to silent unused warnings.
-#define assertm(exp, msg) assert(((void)msg, exp))
+struct B {
+	int m = 0;
+	void hello() const {
+		std::cout << "hello, this is B!\n";
+	}
+};
 
-using namespace std;
+struct D : B
+{
+	void hello() const {
+		std::cout << "hello, this is D!\n";
+	}
+};
+
+enum class E { ONE = 1, TWO, THREE };
+enum EU { ONE = 1, TWO, THREE };
+
 int main()
 {
-    enum class Gender { Male, Female };
+	int n = static_cast<int>(3.14);
+	std::cout << "n = " << n << '\n';
 
-    enum class Gender2 { Male, Female };
+	std::vector<int> v = static_cast<std::vector<int>>(10);
+	std::cout << "v.size() = " << v.size() << '\n';
 
-    enum class Color { Red, Green, Blue };
- //   Gender gender = Gender::Male;
- ///*   Gender2 gender2 = Female;*/
- //   int Male = 10;
- //   cout << gender << endl;
- //       /*<< gender2;*/
- //   std::cout << "Hello World!\n";
-    int Green = 10;
-    Color x = Color::Green;
-    if (x == Color::Red)
-    {
-        cout << "it's red\n";
-    }
-    else
-    {
-        cout << "it's not red\n";
-    }
+	D d;
+	B& br = d;
+	br.hello();
+	std::cout << "m of br is " << br.m << '\n';
 
-    cout << &x << endl;
-    //cout << &(x+1) << endl;
-    cout << int(x) << endl;
+	D& another_d = static_cast<D&>(br);
+	another_d.hello();
+	std::vector<int> v2 = static_cast<std::vector<int>&&>(v);
 
+	std::cout << "check, v2.size() = " << v2.size() << '\n';
+	std::cout << "after move, v.size() = " << v.size() << '\n';
 
-    assert(2 + 2 == 4);
-    std::cout << "Execution continues past the first assert\n";
-    //assertm(2 + 2 == 5, "There are five lights");
-    //std::cout << "Execution continues past the second assert\n";
+	static_cast<void>(v2.size());
 
-    double result, param = 10;
-    result = log(param);
+	void* nv = &n;
+	int* ni = static_cast<int*>(nv);
+	std::cout << "*ni = " << *ni << '\n';
 
-    double ref_param = 2.30259;
-    std::cout << result << std::endl;
-    assert((result, ref_param));
-    return 0;
+	D a[10];
+	B* dp = static_cast<B*>(a);
+	a[1].hello();
+	std::cout << a[1].m << std::endl;
+
+	E e = E::ONE;
+	int one = static_cast<int>(e);
+	std::cout << "one is "<< one << '\n';
+
+	E e2 = static_cast<E>(one);
+	EU eu = static_cast<EU>(e2);
+
+	//std::cout << "e2 is " << one << '\n';
+	//std::cout << "eu is " << e2 << '\n';
+
+	return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
