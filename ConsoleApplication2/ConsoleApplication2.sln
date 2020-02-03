@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tryffplay", "Tryffplay\Tryf
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FfmpegConsoleApp", "FfmpegConsoleApp\FfmpegConsoleApp.vcxproj", "{F85F1592-E5D3-4186-B523-ED775B5BC222}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApp1", "MFCApp1\MFCApp1.vcxproj", "{7DC9445A-664D-487D-8D9D-29624AF74145}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{F85F1592-E5D3-4186-B523-ED775B5BC222}.Release|x64.Build.0 = Release|x64
 		{F85F1592-E5D3-4186-B523-ED775B5BC222}.Release|x86.ActiveCfg = Release|Win32
 		{F85F1592-E5D3-4186-B523-ED775B5BC222}.Release|x86.Build.0 = Release|Win32
+		{7DC9445A-664D-487D-8D9D-29624AF74145}.Debug|x64.ActiveCfg = Debug|x64
+		{7DC9445A-664D-487D-8D9D-29624AF74145}.Debug|x64.Build.0 = Debug|x64
+		{7DC9445A-664D-487D-8D9D-29624AF74145}.Debug|x86.ActiveCfg = Debug|Win32
+		{7DC9445A-664D-487D-8D9D-29624AF74145}.Debug|x86.Build.0 = Debug|Win32
+		{7DC9445A-664D-487D-8D9D-29624AF74145}.Release|x64.ActiveCfg = Release|x64
+		{7DC9445A-664D-487D-8D9D-29624AF74145}.Release|x64.Build.0 = Release|x64
+		{7DC9445A-664D-487D-8D9D-29624AF74145}.Release|x86.ActiveCfg = Release|Win32
+		{7DC9445A-664D-487D-8D9D-29624AF74145}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

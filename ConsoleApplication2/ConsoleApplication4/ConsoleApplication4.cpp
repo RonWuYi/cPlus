@@ -41,8 +41,25 @@ void SaveFrame(AVFrame* pFrame, int width, int height, int iFrame)
     fclose(pFile);
 }
 
+int stream_component_open(VideoState* is, int stream_index) {
+
+}
 int main(int argc, char *argv[])
 {
+    SDL_Event event;
+    VideoState* is;
+
+    is = (VideoState*)av_mallocz(sizeof(VideoState));
+    //is = (VideoState*)av_malloc(sizeof(VideoState));
+
+    av_strlcpy(is->filename, argv[1], sizeof(is->filename));
+    is->pictq_mutex = SDL_CreateMutex();
+    is->pictq_cond = SDL_CreateCond();
+
+    schedule_refresh(is, 40);
+
+    is->parse_tid = SDL_CreateThread(decode_thread, is);
+
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER))
     {
         fprintf(stderr, "could not initialize SDL - %s\n", SDL_GetError());
