@@ -90,19 +90,21 @@ int new_decode(AVCodecContext* avctx, AVFrame* frame, int* got_frame, AVPacket* 
 
 int main(int argc, char* argv[]) {
     // Initalizing these to NULL prevents segfaults!
-    AVFormatContext* pFormatCtx = NULL;
+    AVFormatContext* pFormatCtx = nullptr;
+
+    //nullptr
     int					i, videoStream;
-    AVCodecParameters* pCodecPar = NULL;
+    AVCodecParameters* pCodecPar = nullptr;
     //AVCodecContext		*pCodecCtxOrig = NULL;
-    AVCodecContext* pCodecCtx = NULL;
-    AVCodec* pCodec = NULL;
-    AVFrame* pFrame = NULL;
-    AVFrame* pFrameRGB = NULL;
+    AVCodecContext* pCodecCtx = nullptr;
+    AVCodec* pCodec = nullptr;
+    AVFrame* pFrame = nullptr;
+    AVFrame* pFrameRGB = nullptr;
     AVPacket			packet;
     int					frameFinished;
     int					numBytes;
-    uint8_t* buffer = NULL;
-    struct SwsContext* sws_ctx = NULL;
+    uint8_t* buffer = nullptr;
+    struct SwsContext* sws_ctx = nullptr;
 
     if (argc < 2) {
         printf("Please provide a movie file\n");
@@ -116,14 +118,14 @@ int main(int argc, char* argv[]) {
 
 
     //Open video file
-    if (avformat_open_input(&pFormatCtx, argv[1], NULL, NULL) != 0)
+    if (avformat_open_input(&pFormatCtx, argv[1], nullptr, nullptr) != 0)
         return -1; // Couldn't open file
 
     //if (avformat_open_input(&pFormatCtx, filepath, NULL, NULL) != 0)
     //	return -1; // Couldn't open file
 
     // Retrieve stream information
-    if (avformat_find_stream_info(pFormatCtx, NULL) < 0)
+    if (avformat_find_stream_info(pFormatCtx, nullptr) < 0)
         return -1; // Couldn't find stream information
 
     // Dump information about file onto standard error
@@ -143,7 +145,7 @@ int main(int argc, char* argv[]) {
     pCodecPar = pFormatCtx->streams[videoStream]->codecpar;
     // Find the decoder for the video stream
     pCodec = avcodec_find_decoder(pCodecPar->codec_id);
-    if (pCodec == NULL) {
+    if (pCodec == nullptr) {
         fprintf(stderr, "Unsupported codec!\n");
         return -1; // Codec not found
     }
@@ -156,7 +158,7 @@ int main(int argc, char* argv[]) {
     }
 
     // Open codec
-    if (avcodec_open2(pCodecCtx, pCodec, NULL) < 0)
+    if (avcodec_open2(pCodecCtx, pCodec, nullptr) < 0)
         return -1; // Could not open codec
 
     // Allocate video frame
@@ -164,7 +166,7 @@ int main(int argc, char* argv[]) {
 
     // Allocate an AVFrame structure
     pFrameRGB = av_frame_alloc();
-    if (pFrameRGB == NULL)
+    if (pFrameRGB == nullptr)
         return -1;
 
     // Determine required buffer size and allocate buffer
@@ -190,9 +192,9 @@ int main(int argc, char* argv[]) {
         pCodecCtx->height,
         AV_PIX_FMT_RGB24,
         SWS_BILINEAR,
-        NULL,
-        NULL,
-        NULL
+        nullptr,
+        nullptr,
+        nullptr
     );
 
     // Read frames and save first five frames to disk
