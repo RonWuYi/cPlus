@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FfmpegConsoleApp", "FfmpegC
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApp1", "MFCApp1\MFCApp1.vcxproj", "{7DC9445A-664D-487D-8D9D-29624AF74145}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scaling", "scaling\scaling.vcxproj", "{C81D5D8D-3643-4E30-AFD4-D7B353AEE23D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{7DC9445A-664D-487D-8D9D-29624AF74145}.Release|x64.Build.0 = Release|x64
 		{7DC9445A-664D-487D-8D9D-29624AF74145}.Release|x86.ActiveCfg = Release|Win32
 		{7DC9445A-664D-487D-8D9D-29624AF74145}.Release|x86.Build.0 = Release|Win32
+		{C81D5D8D-3643-4E30-AFD4-D7B353AEE23D}.Debug|x64.ActiveCfg = Debug|x64
+		{C81D5D8D-3643-4E30-AFD4-D7B353AEE23D}.Debug|x64.Build.0 = Debug|x64
+		{C81D5D8D-3643-4E30-AFD4-D7B353AEE23D}.Debug|x86.ActiveCfg = Debug|Win32
+		{C81D5D8D-3643-4E30-AFD4-D7B353AEE23D}.Debug|x86.Build.0 = Debug|Win32
+		{C81D5D8D-3643-4E30-AFD4-D7B353AEE23D}.Release|x64.ActiveCfg = Release|x64
+		{C81D5D8D-3643-4E30-AFD4-D7B353AEE23D}.Release|x64.Build.0 = Release|x64
+		{C81D5D8D-3643-4E30-AFD4-D7B353AEE23D}.Release|x86.ActiveCfg = Release|Win32
+		{C81D5D8D-3643-4E30-AFD4-D7B353AEE23D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
