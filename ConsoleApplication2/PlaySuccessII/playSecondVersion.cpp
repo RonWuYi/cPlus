@@ -9,6 +9,7 @@ extern "C" {
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libswscale/swscale.h>
+#include <libavutil/parseutils.h>
 #include <libavutil/imgutils.h>
 
 #ifdef __cplusplus
@@ -51,6 +52,24 @@ int new_decode(AVCodecContext* avctx, AVFrame* frame,
 	return 0;
 }
 
+void fill_yuv_image(uint8_t* data[4], int linesize[4],
+	int width, int height, int frame_index)
+{
+	int x, y;
+
+	/* Y */
+	for (y = 0; y < height; y++)
+		for (x = 0; x < width; x++)
+			data[0][y * linesize[0] + x] = x + y + frame_index * 3;
+
+	/* Cb and Cr */
+	for (y = 0; y < height / 2; y++) {
+		for (x = 0; x < width / 2; x++) {
+			data[1][y * linesize[1] + x] = 128 + y + frame_index * 2;
+			data[2][y * linesize[2] + x] = 64 + x + frame_index * 5;
+		}
+	}
+}
 
 //int main(int argc, char* argv[]) {
 int main(int argc, char* argv[]) {
@@ -133,9 +152,21 @@ int main(int argc, char* argv[]) {
 		return -1; // Error copying codec context
 	}
 
+	uint8_t* src_data[4], * dst_data[4];
+	int src_linesize[4], dst_linesize[4];
+
+	enum AVPixelFormat src_pix_fmt = AV_PIX_FMT_YUV420P, dst_pix_fmt = AV_PIX_FMT_YUV420P;
+
+	int src_w = pCodecCtx->width;
+	int dst_w = pCodecCtx->width / 2;
+	int src_h = pCodecCtx->height;
+	int dst_h = pCodecCtx->height / 2;
+
+
 	// Open codec
 	if (avcodec_open2(pCodecCtx, pCodec, NULL) < 0)
 		return -1; // Could not open codec
+
 
 	// Allocate video frame
 	pFrame = av_frame_alloc();
@@ -144,7 +175,7 @@ int main(int argc, char* argv[]) {
 	buffer = (uint8_t*)av_malloc(av_image_get_buffer_size(
 		AV_PIX_FMT_YUV420P,
 		pCodecCtx->width, pCodecCtx->height, 1));
-
+	//av_parse_video_size();
 	av_image_fill_arrays(pFrameYUV->data, pFrameYUV->linesize,
 		buffer,
 		AV_PIX_FMT_YUV420P, pCodecCtx->width, pCodecCtx->height, 1);
@@ -158,8 +189,8 @@ int main(int argc, char* argv[]) {
 		"FFmpeg Tutorial",
 		SDL_WINDOWPOS_UNDEFINED,
 		SDL_WINDOWPOS_UNDEFINED,
-		pCodecCtx->width,
-		pCodecCtx->height,
+		dst_w,
+		dst_h,
 		0
 	);
 
@@ -179,8 +210,8 @@ int main(int argc, char* argv[]) {
 		renderer,
 		SDL_PIXELFORMAT_YV12,
 		SDL_TEXTUREACCESS_STREAMING,
-		pCodecCtx->width,
-		pCodecCtx->height
+		dst_w,
+		dst_h
 	);
 
 	if (!texture) {
@@ -190,17 +221,43 @@ int main(int argc, char* argv[]) {
 
 	rect.x = 0;
 	rect.y = 0;
-	rect.w = pCodecCtx->width;
-	rect.h = pCodecCtx->height;
+	rect.w = dst_w;
+	rect.h = dst_h;
 
 	// initialize SWS context for software scaling
-	sws_ctx = sws_getContext(pCodecCtx->width, pCodecCtx->height,
-		pCodecCtx->pix_fmt, pCodecCtx->width, pCodecCtx->height,
+	sws_ctx = sws_getContext(src_w, src_h,
+		pCodecCtx->pix_fmt, dst_w, dst_h,
 		AV_PIX_FMT_YUV420P,
 		SWS_BILINEAR,
 		NULL,
 		NULL,
 		NULL);
+
+	int ret = 0;
+
+	/* allocate source and destination image buffers */
+	if ((ret = av_image_alloc(src_data, src_linesize,
+		src_w, src_h, src_pix_fmt, 16)) < 0) {
+		fprintf(stderr, "Could not allocate source image\n");
+		//fclose(dst_file);
+		av_freep(&src_data[0]);
+		av_freep(&dst_data[0]);
+		sws_freeContext(sws_ctx);
+		return ret < 0;
+	}
+
+	/* buffer is going to be written to rawvideo file, no alignment */
+	if ((ret = av_image_alloc(dst_data, dst_linesize,
+		dst_w, dst_h, dst_pix_fmt, 1)) < 0) {
+		fprintf(stderr, "Could not allocate destination image\n");
+		//fclose(dst_file);
+		av_freep(&src_data[0]);
+		av_freep(&dst_data[0]);
+		sws_freeContext(sws_ctx);
+		return ret < 0;
+	}
+	int dst_bufsize;
+	dst_bufsize = ret;
 
 	// set up YV12 pixel array (12 bits per pixel)
 	yPlaneSz = pCodecCtx->width * pCodecCtx->height;
