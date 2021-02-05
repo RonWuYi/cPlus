@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-8  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g CMakeFiles/rest.dir/src/myqueue_ut.cpp.o -o ../bin/rest  ../lib/libgtest_maind.a ../lib/libgtestd.a -lpthread 

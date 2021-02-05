@@ -60,7 +60,7 @@ include_directories(include)
 include_directories(Header)
 include_directories(lib/x64)
 
-add_subdirectory(CLeaning)
+# add_subdirectory(CLeaning)
 #add_subdirectory(ffmpegLeaning)
 add_subdirectory(rest_file)
 add_subdirectory(sdlLeaning)

@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/hdc/project/github/cPlus/build/googletest-build/googlemock",
+  "command": "/bin/x86_64-linux-gnu-g++-8  -isystem /home/hdc/project/github/cPlus/build/googletest-src/googlemock/include -isystem /home/hdc/project/github/cPlus/build/googletest-src/googlemock -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest/include -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/hdc/project/github/cPlus/build/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/home/hdc/project/github/cPlus/build/googletest-src/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/hdc/project/github/cPlus/build/googletest-build/googlemock",
+  "command": "/bin/x86_64-linux-gnu-g++-8  -I/home/hdc/project/github/cPlus/build/googletest-src/googlemock/include -I/home/hdc/project/github/cPlus/build/googletest-src/googlemock -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest/include -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/hdc/project/github/cPlus/build/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/home/hdc/project/github/cPlus/build/googletest-src/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/hdc/project/github/cPlus/build/googletest-build/googletest",
+  "command": "/bin/x86_64-linux-gnu-g++-8  -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest/include -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/hdc/project/github/cPlus/build/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/home/hdc/project/github/cPlus/build/googletest-src/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/hdc/project/github/cPlus/build/googletest-build/googletest",
+  "command": "/bin/x86_64-linux-gnu-g++-8  -I/home/hdc/project/github/cPlus/build/googletest-src/googletest/include -I/home/hdc/project/github/cPlus/build/googletest-src/googletest  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/hdc/project/github/cPlus/build/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/home/hdc/project/github/cPlus/build/googletest-src/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/hdc/project/github/cPlus/build/MathFunctions",
+  "command": "/bin/x86_64-linux-gnu-g++-8  -I/home/hdc/project/github/cPlus/MathFunctions  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -std=gnu++11 -o CMakeFiles/MathFunctions.dir/mysqrt.cpp.o -c /home/hdc/project/github/cPlus/MathFunctions/mysqrt.cpp",
+  "file": "/home/hdc/project/github/cPlus/MathFunctions/mysqrt.cpp"
+},
+{
+  "directory": "/home/hdc/project/github/cPlus/build/MathFunctions",
+  "command": "/bin/x86_64-linux-gnu-g++-8  -I/home/hdc/project/github/cPlus/MathFunctions  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -std=gnu++11 -o CMakeFiles/MathFunctions.dir/MakeTable.cpp.o -c /home/hdc/project/github/cPlus/MathFunctions/MakeTable.cpp",
+  "file": "/home/hdc/project/github/cPlus/MathFunctions/MakeTable.cpp"
+},
+{
+  "directory": "/home/hdc/project/github/cPlus/build/rest_file",
+  "command": "/bin/x86_64-linux-gnu-g++-8  -I/home/hdc/project/github/cPlus/MathFunctions -I/home/hdc/project/github/cPlus/include -I/home/hdc/project/github/cPlus/Header -I/home/hdc/project/github/cPlus/lib/x64 -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest/include -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -std=gnu++11 -o CMakeFiles/rest.dir/src/myqueue_ut.cpp.o -c /home/hdc/project/github/cPlus/rest_file/src/myqueue_ut.cpp",
+  "file": "/home/hdc/project/github/cPlus/rest_file/src/myqueue_ut.cpp"
+},
+{
+  "directory": "/home/hdc/project/github/cPlus/build/sdlLeaning",
+  "command": "/bin/x86_64-linux-gnu-g++-8  -I/home/hdc/project/github/cPlus/MathFunctions -I/home/hdc/project/github/cPlus/include -I/home/hdc/project/github/cPlus/Header -I/home/hdc/project/github/cPlus/lib/x64 -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest/include -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -std=gnu++11 -o CMakeFiles/sdlLeaning.dir/src/normal001.cpp.o -c /home/hdc/project/github/cPlus/sdlLeaning/src/normal001.cpp",
+  "file": "/home/hdc/project/github/cPlus/sdlLeaning/src/normal001.cpp"
+}
+]

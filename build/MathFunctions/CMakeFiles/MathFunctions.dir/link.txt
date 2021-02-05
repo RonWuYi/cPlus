@@ -1,0 +1,2 @@
+/bin/x86_64-linux-gnu-ar qc libMathFunctions.a CMakeFiles/MathFunctions.dir/mysqrt.cpp.o CMakeFiles/MathFunctions.dir/MakeTable.cpp.o
+/bin/x86_64-linux-gnu-ranlib libMathFunctions.a

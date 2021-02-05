@@ -1,0 +1,14 @@
+# Target labels
+ googletest
+# Source files and their labels
+/home/hdc/project/github/cPlus/build/googletest-download/CMakeFiles/googletest
+/home/hdc/project/github/cPlus/build/googletest-download/CMakeFiles/googletest.rule
+/home/hdc/project/github/cPlus/build/googletest-download/CMakeFiles/googletest-complete.rule
+/home/hdc/project/github/cPlus/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-install.rule
+/home/hdc/project/github/cPlus/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-mkdir.rule
+/home/hdc/project/github/cPlus/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download.rule
+/home/hdc/project/github/cPlus/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-update.rule
+/home/hdc/project/github/cPlus/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-patch.rule
+/home/hdc/project/github/cPlus/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-configure.rule
+/home/hdc/project/github/cPlus/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-build.rule
+/home/hdc/project/github/cPlus/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-test.rule
