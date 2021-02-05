@@ -311,8 +311,13 @@ VecString getCssnList(const char* file)
 	return key_data;
 }
 
-int main()
+int main(int argc, char** argv)
 {
+    std::cout << "Have " << argc << " arguments:" << '\n';
+    for (int i = 0; i < argc; ++i)
+    {
+        std::cout << argv[i] << '\n';
+    }
 	std::vector<std::string> fileList;
 
 	std::string folderPath = "C:\\Work\\project\\gitlab\\ffmpeg411sdl220932bit\\fileFolder";
