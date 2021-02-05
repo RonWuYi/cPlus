@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-8 -g CMakeFiles/cPlus.dir/src/example.cpp.o -o cPlus 

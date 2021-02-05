@@ -4,7 +4,7 @@
 # compile CXX with /bin/x86_64-linux-gnu-g++-8
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hdc/project/github/cPlus/MathFunctions -I/home/hdc/project/github/cPlus/include -I/home/hdc/project/github/cPlus/Header -I/home/hdc/project/github/cPlus/lib/x64 -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest/include -isystem /home/hdc/project/github/cPlus/build/googletest-src/googletest
+CXX_INCLUDES = 
 
-CXX_FLAGS =  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -std=gnu++11
+CXX_FLAGS = -g -std=gnu++11
 

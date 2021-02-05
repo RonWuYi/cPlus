@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "../bin/sdlLeaning"
-  "../bin/sdlLeaning.pdb"
   "CMakeFiles/sdlLeaning.dir/src/normal001.cpp.o"
+  "sdlLeaning"
+  "sdlLeaning.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,1 +1,1 @@
-/bin/x86_64-linux-gnu-g++-8  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g CMakeFiles/sdlLeaning.dir/src/normal001.cpp.o -o ../bin/sdlLeaning  ../lib/libgtest_maind.a ../lib/libgtestd.a -lpthread 
+/bin/x86_64-linux-gnu-g++-8 -g CMakeFiles/sdlLeaning.dir/src/normal001.cpp.o -o sdlLeaning  -lgtest_main -lgtest 

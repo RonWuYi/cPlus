@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hdc/project/github/cPlus/src/example.cpp
+iostream
+-
+vector
+-
+string
+-
+regex
+-
+sstream
+-
+fstream
+-
+set
+-
+dirent.h
+-
+

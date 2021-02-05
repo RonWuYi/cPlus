@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/hdc/project/github/cPlus/MathFunctions
 
-CXX_FLAGS =  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -std=gnu++11
+CXX_FLAGS = -g -std=gnu++11
 
