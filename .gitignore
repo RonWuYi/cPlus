@@ -392,3 +392,13 @@ cmake-build-debug/googletest-build/
 cmake-build-debug/googletest-download/
 cmake-build-debug/googletest-src/
 cmake-build-debug/bin/
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
