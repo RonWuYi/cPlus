@@ -361,10 +361,10 @@ int main(int argc, char** argv)
 												KeyChipVar::KeyType);
 			// 0 - tdes, 1 - aes, 2 - tdes&aes 
 			fileinfo.m_chip_arg_type = checkChipType(fileList[i].c_str(),
-													chip_re,
-													3,
-													4,
-													KeyChipVar::ChipType);
+													 chip_re,
+													 3,
+													 4,
+													 KeyChipVar::ChipType);
 
 			for (size_t i = 0; i < tdesUK.cssnList.size(); ++i)
 			{

@@ -76,27 +76,27 @@ include CMakeFiles/cPlus.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cPlus.dir/flags.make
 
-CMakeFiles/cPlus.dir/src/example.cpp.o: CMakeFiles/cPlus.dir/flags.make
-CMakeFiles/cPlus.dir/src/example.cpp.o: ../src/example.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/project/github/cPlus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cPlus.dir/src/example.cpp.o"
-	/bin/x86_64-linux-gnu-g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cPlus.dir/src/example.cpp.o -c /home/hdc/project/github/cPlus/src/example.cpp
+CMakeFiles/cPlus.dir/src/main.cpp.o: CMakeFiles/cPlus.dir/flags.make
+CMakeFiles/cPlus.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hdc/project/github/cPlus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cPlus.dir/src/main.cpp.o"
+	/bin/x86_64-linux-gnu-g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cPlus.dir/src/main.cpp.o -c /home/hdc/project/github/cPlus/src/main.cpp
 
-CMakeFiles/cPlus.dir/src/example.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cPlus.dir/src/example.cpp.i"
-	/bin/x86_64-linux-gnu-g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/project/github/cPlus/src/example.cpp > CMakeFiles/cPlus.dir/src/example.cpp.i
+CMakeFiles/cPlus.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cPlus.dir/src/main.cpp.i"
+	/bin/x86_64-linux-gnu-g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hdc/project/github/cPlus/src/main.cpp > CMakeFiles/cPlus.dir/src/main.cpp.i
 
-CMakeFiles/cPlus.dir/src/example.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cPlus.dir/src/example.cpp.s"
-	/bin/x86_64-linux-gnu-g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/project/github/cPlus/src/example.cpp -o CMakeFiles/cPlus.dir/src/example.cpp.s
+CMakeFiles/cPlus.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cPlus.dir/src/main.cpp.s"
+	/bin/x86_64-linux-gnu-g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hdc/project/github/cPlus/src/main.cpp -o CMakeFiles/cPlus.dir/src/main.cpp.s
 
 # Object files for target cPlus
 cPlus_OBJECTS = \
-"CMakeFiles/cPlus.dir/src/example.cpp.o"
+"CMakeFiles/cPlus.dir/src/main.cpp.o"
 
 # External object files for target cPlus
 cPlus_EXTERNAL_OBJECTS =
 
-cPlus: CMakeFiles/cPlus.dir/src/example.cpp.o
+cPlus: CMakeFiles/cPlus.dir/src/main.cpp.o
 cPlus: CMakeFiles/cPlus.dir/build.make
 cPlus: CMakeFiles/cPlus.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hdc/project/github/cPlus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cPlus"

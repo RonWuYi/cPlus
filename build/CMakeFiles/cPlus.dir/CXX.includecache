@@ -6,21 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/hdc/project/github/cPlus/src/example.cpp
+/home/hdc/project/github/cPlus/src/main.cpp
 iostream
 -
-vector
--
-string
--
-regex
--
-sstream
--
-fstream
--
-set
--
-dirent.h
+cstdlib
 -
 
