@@ -8,6 +8,7 @@
 #include <cassert>
 #include <functional>
 
+int add(int x, int y);
 int returnExample() 
 {
     return EXIT_SUCCESS;
@@ -150,11 +151,18 @@ int main()
         
     }
 
-    std::cout << "custom lambda-expression delete demo\n";
-    {
-        std::unique_ptr<D, std::function<void(D*)>> p(new D, [](D* ptr)
-        {})
-    }
+    // std::cout << "custom lambda-expression delete demo\n";
+    // {
+    //     std::unique_ptr<D, std::function<void(D*)>> p(new D, [](D* ptr)
+    //     {})
+    // }
+    // return 0;
+    std::cout << add(4, 50) << '\n';
     return 0;
 
+}
+
+int add(int x, int y)
+{
+    return x + y;
 }

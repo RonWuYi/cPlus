@@ -4,7 +4,7 @@
 # compile CXX with /bin/x86_64-linux-gnu-g++-8
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/hdc/project/github/cPlus/src/include
 
 CXX_FLAGS = -g -std=gnu++17
 

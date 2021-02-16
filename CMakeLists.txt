@@ -79,6 +79,7 @@ message("SOURCE DIR is ${SOURCE_DIR}")
 
 # Now simply link against gtest or gtest_main as needed. Eg
 add_executable(cPlus ${SOURCE_DIR}/main.cpp)
+target_include_directories(cPlus PUBLIC ${SOURCE_DIR}/include)
 #add_executable(untitled main002.cpp main_ut002.cpp)
 #add_executable(untitled main.cpp Header.h main_ut.cpp)
 #target_link_libraries(untitled gtest_main)

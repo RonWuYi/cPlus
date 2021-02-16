@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/hdc/project/github/cPlus/build",
-  "command": "/bin/x86_64-linux-gnu-g++-8   -g -std=gnu++17 -o CMakeFiles/cPlus.dir/src/main.cpp.o -c /home/hdc/project/github/cPlus/src/main.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-8  -I/home/hdc/project/github/cPlus/src/include -g -std=gnu++17 -o CMakeFiles/cPlus.dir/src/main.cpp.o -c /home/hdc/project/github/cPlus/src/main.cpp",
   "file": "/home/hdc/project/github/cPlus/src/main.cpp"
 }
 ]
