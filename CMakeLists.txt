@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.8)
 project(cPlus)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 message("CMAKE CURRENT LIST DIR is ${CMAKE_CURRENT_LIST_DIR}")
 
@@ -78,8 +78,13 @@ message("SOURCE DIR is ${SOURCE_DIR}")
 #endif()
 
 # Now simply link against gtest or gtest_main as needed. Eg
+
+find_package(Threads)
+
 add_executable(cPlus ${SOURCE_DIR}/main.cpp)
 target_include_directories(cPlus PUBLIC ${SOURCE_DIR}/include)
+target_link_libraries(cPlus ${CMAKE_THREAD_LIBS_INIT})
+
 #add_executable(untitled main002.cpp main_ut002.cpp)
 #add_executable(untitled main.cpp Header.h main_ut.cpp)
 #target_link_libraries(untitled gtest_main)
