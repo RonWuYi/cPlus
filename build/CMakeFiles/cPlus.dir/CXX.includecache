@@ -7,22 +7,12 @@
 #IncludeRegexTransform: 
 
 /home/hdc/project/github/cPlus/src/main.cpp
-any
--
 iostream
--
-cstdlib
 -
 string_view
 -
-memory
+thread
 -
 vector
--
-fstream
--
-cassert
--
-functional
 -
 
