@@ -387,6 +387,7 @@ MigrationBackup/
 
 # Others
 .idea/
+.vscode/
 cmake-build-debug/CMakeFiles/CMakeError.log
 cmake-build-debug/googletest-build/
 cmake-build-debug/googletest-download/
