@@ -1,9 +1,16 @@
 // ConsoleApplication4.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include "CommonHeader.h"
 #include "Header.h"
 #include <iostream>
 
+// sdl2 main
+#ifdef _WIN32
+
+#undef main
+
+#endif // _WIN32
 
 void SaveFrame(AVFrame* pFrame, int width, int height, int iFrame)
 {
@@ -34,8 +41,63 @@ void SaveFrame(AVFrame* pFrame, int width, int height, int iFrame)
     fclose(pFile);
 }
 
+int stream_component_open(VideoState* is, int stream_index) {
+
+}
 int main(int argc, char *argv[])
 {
+    SDL_Event event;
+    VideoState* is;
+
+    is = (VideoState*)av_mallocz(sizeof(VideoState));
+    //is = (VideoState*)av_malloc(sizeof(VideoState));
+
+    av_strlcpy(is->filename, argv[1], sizeof(is->filename));
+    is->pictq_mutex = SDL_CreateMutex();
+    is->pictq_cond = SDL_CreateCond();
+
+    schedule_refresh(is, 40);
+
+    is->parse_tid = SDL_CreateThread(decode_thread, is);
+
+    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER))
+    {
+        fprintf(stderr, "could not initialize SDL - %s\n", SDL_GetError());
+        exit(1);
+    }
+
+    static SDL_Window* window;
+    static SDL_Renderer* renderer;
+    static SDL_RendererInfo* renderer_info = { 0 };
+
+    window = SDL_CreateWindow("player", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+        video_width, video_height, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
+
+
+    if (window == NULL)
+    {
+        fprintf(stderr, "could not SDL_CreateWindow on SDL - %s\n", SDL_GetError());
+        exit(1);
+    }
+
+    renderer = SDL_CreateRenderer(window, -1, 0);
+
+    if (renderer == NULL)
+    {
+        fprintf(stderr, "could not SDL_CreateRenderer on SDL - %s\n", SDL_GetError());
+        exit(1);
+    }
+
+    if (SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255) < 0)
+    {
+        fprintf(stderr, "could not SDL_SetRenderDrawColor on SDL - %s\n", SDL_GetError());
+        exit(1);
+    }
+    
+    SDL_RenderClear(renderer);
+    SDL_RenderPresent(renderer);
+    SDL_Delay(3000);
+
     AVFormatContext*    pFormatCtx = NULL;
     int                 i, videoStream;
     AVCodecContext* pCodecCtxOrig = NULL;
@@ -53,7 +115,7 @@ int main(int argc, char *argv[])
     AVPacket packet;
     int frameFinished;
     int numBytes;
-    uint8_t** buffer = NULL;
+    uint8_t* buffer = NULL;
     struct SwsContext* sws_ctx = NULL;
 
     if (argc < 2)
@@ -128,14 +190,18 @@ int main(int argc, char *argv[])
     }
 
     /*numBytes = avpicture_get_size(AV_PIX_FMT_RGB24, pCodecCtx->width, pCodecCtx->height);*/
-    int tmp_align = 32;
-    numBytes = av_image_get_buffer_size(AV_PIX_FMT_RGB24, pCodecCtx->width, pCodecCtx->height, tmp_align);
-    buffer = (uint8_t**)av_malloc(numBytes * sizeof(uint8_t));
+    int tmp_align = 1;
+    numBytes = av_image_get_buffer_size(AV_PIX_FMT_RGB24, pCodecCtx->width,
+                                        pCodecCtx->height, tmp_align);
+    buffer = (uint8_t*)av_malloc(numBytes * sizeof(uint8_t));
 
     //avpicture_fill((AVPicture*));
 
     // av_image_fill_arrays
-    av_image_fill_arrays(buffer, pFrameRGB->linesize, NULL, AV_PIX_FMT_RGB24, pCodecCtx->width, pCodecCtx->height, 1);
+    av_image_fill_arrays(pFrameRGB->data, pFrameRGB->linesize,
+                        buffer, AV_PIX_FMT_RGB24,
+                        pCodecCtx->width, pCodecCtx->height, 
+                        1);
 
     // initialize SWS context for software scaling
     sws_ctx = sws_getContext(pCodecCtx->width,
@@ -155,6 +221,7 @@ int main(int argc, char *argv[])
     AVSubtitle* tmp_subtitle = NULL;
     while (av_read_frame(pFormatCtx, &packet)>=0)
     {
+        LOG(INFO) << "start read frame";
         if (packet.stream_index==videoStream)
         {
             //decoder_decode_frame();
@@ -175,9 +242,12 @@ int main(int argc, char *argv[])
         // Free the packet
         /*av_free_packet(&packet);*/
 
+        LOG(INFO) << "free packet";
         av_packet_unref(&packet);
 
     }
+
+    LOG(INFO) << "finnal free";
     // Free the RGB image
     av_free(buffer);
     av_frame_free(&pFrameRGB);

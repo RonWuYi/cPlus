@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: cl.exe build active file",
+			"command": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe",
+			"args": [
+				"/Zi",
+				"/EHsc",
+				"/nologo",
+				"/Fe:",
+				"${workspaceFolder}\\build\\${fileBasenameNoExtension}\\${fileBasenameNoExtension}.exe",	
+                "/Fd:",
+				"${workspaceFolder}\\build\\vc140.pdb",
+                "/Fo:",
+				"${workspaceFolder}\\build\\${fileBasenameNoExtension}\\${fileBasenameNoExtension}.obj",	
+				"${file}",
+                "/IC:\\Work\\vcpkg\\installed\\x86-windows\\include",
+                "/IC:\\Work\\project\\local\\cplusplus\\include",
+				"/std:c++20",
+                "/D_WIN32_WINNT=0x0A00",
+                "/DWINVER=0x0A00",
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: cl.exe"
+		}
+	]
+}

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SuccessSaveVideo.cpp">
+    <ClCompile Include="scaling_video.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
