@@ -4,6 +4,8 @@
 #include <math.h>
 #include "Config.h"
 
+#include <libavcodec/avcodec.h>
+
 int main (int argc, char *argv[])
 {
     if (argc < 2)
