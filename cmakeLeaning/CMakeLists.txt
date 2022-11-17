@@ -25,6 +25,6 @@ target_include_directories(cmakeLeaning PUBLIC
                         "${PROJECT_BINARY_DIR}"
                         "${VCPKG_ROOT}/installed/x86-windows/include")
 
-target_link_libraries(cmakeLeaning SDL2 SDL2main avutil avformat avcodec swscale swresample)
+target_link_libraries(cmakeLeaning ${LIBS})
 
 install(TARGETS cmakeLeaning RUNTIME DESTINATION ${BIN_DIR})
