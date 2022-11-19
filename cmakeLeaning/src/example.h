@@ -1,6 +1,10 @@
 #ifndef EXAMPLE_H_
 #define EXAMPLE_H_
 
+#include <array>
+
+#include <gtest/gtest.h>
+
 namespace leet
 {
     struct TreeNode {
@@ -23,6 +27,9 @@ namespace leet
         int countUnivalSubtrees(TreeNode* root);
     };
     
+    int Factorial(int n);  // Returns the factorial of n
+
+    int runTest();
 } // namespace leet
 
 #endif

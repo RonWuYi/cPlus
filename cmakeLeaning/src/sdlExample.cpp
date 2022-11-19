@@ -2,6 +2,7 @@
 #include <iostream>
 
 #include "example.h"
+#include "gt.hpp"
 
 #ifdef __cplusplus
 extern "C" {
@@ -87,6 +88,8 @@ inline int new_decode(AVCodecContext *avctx, AVFrame *frame, int *got_frame, AVP
 int main(int argc, char *argv[]) {
 
     std::cout << "start sdlExample main" << std::endl;
+    leet::runTest();
+    gt::MyCircularQueue<int> new_array(10);
     // Initalizing these to NULL prevents segfaults!
     AVFormatContext		*pFormatCtx = NULL;
     AVCodecParameters	*codecParameters = NULL;

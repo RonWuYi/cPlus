@@ -8,6 +8,7 @@ set(PROJECT_VERSION_MINOR 0)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+include(gtest.cmake)
 include(variable.cmake)
 
 configure_file (
@@ -17,13 +18,12 @@ configure_file (
 
 include_directories("${PROJECT_BINARY_DIR}")
 add_executable(cmakeLeaning)
+message(STATUS "from root cmake, build files is ${FILES}")
 target_sources(cmakeLeaning PRIVATE ${FILES})
 
 target_compile_features(cmakeLeaning PUBLIC cxx_std_20)
 
-target_include_directories(cmakeLeaning PUBLIC 
-                        "${PROJECT_BINARY_DIR}"
-                        "${VCPKG_ROOT}/installed/x86-windows/include")
+target_include_directories(cmakeLeaning PUBLIC ${INCLUDES})
 
 target_link_libraries(cmakeLeaning ${LIBS})
 
