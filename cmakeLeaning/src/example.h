@@ -2,7 +2,7 @@
 #define EXAMPLE_H_
 
 #include <array>
-
+#include <stack>
 #include <gtest/gtest.h>
 
 namespace leet
@@ -30,6 +30,14 @@ namespace leet
     int Factorial(int n);  // Returns the factorial of n
 
     int runTest();
+
+    class SolutionisValidBST {
+    public:
+        void update(TreeNode* root, TreeNode* low, TreeNode* high);
+        bool isValidBST(TreeNode* root);
+    private:
+        std::stack<TreeNode*> stk, lower_limits, upper_limits;
+    };
 } // namespace leet
 
 #endif

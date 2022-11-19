@@ -89,7 +89,7 @@ int main(int argc, char *argv[]) {
 
     std::cout << "start sdlExample main" << std::endl;
     leet::runTest();
-    gt::MyCircularQueue<int> new_array(10);
+    // gt::MyCircularQueue<int> new_array(10);
     // Initalizing these to NULL prevents segfaults!
     AVFormatContext		*pFormatCtx = NULL;
     AVCodecParameters	*codecParameters = NULL;
