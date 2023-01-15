@@ -38,6 +38,14 @@ namespace leet
     private:
         std::stack<TreeNode*> stk, lower_limits, upper_limits;
     };
+
+    class BSTIterator {
+    public:
+        BSTIterator(TreeNode* root);
+        int next(); 
+        bool hasNext();
+    };
+
 } // namespace leet
 
 #endif
